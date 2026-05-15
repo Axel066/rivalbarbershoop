@@ -1337,7 +1337,7 @@ body.loc-sig .footer::before{
   .acc-price{font-size:.82rem}
   .price-footer{grid-template-columns:repeat(2,1fr)}
   .pf-cta{grid-column:span 2}
-  .ticker-track{animation-duration:14s}
+  .ticker-track{animation:ticker 16s linear infinite}
   .gal-stage{height:55vw;min-height:300px}
   .gal-arr{width:38px;height:38px}
   .gal-arr svg{width:16px;height:16px}
