@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rival — Barber Shop & More</title>
+  <meta name="description" content="Rival Barber Shop & More · Rival Signature — două locații premium în Brașov."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body class="loc-bs">
+
+  <!-- ══ LOCATION SWITCHER ══ -->
+  <div class="loc-pill" id="locPill">
+    <button class="lp-btn active" data-loc="bs"><span class="lp-dot"></span>Barbershop</button>
+    <button class="lp-btn" data-loc="sig"><span class="lp-dot"></span>Signature</button>
+  </div>
+
+  <!-- ══ NAVBAR ══ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <a href="#top" class="nav-logo">
+        <img src="RIVAL_logo_white.png" alt="Rival Barbershop" class="nav-logo-img nav-logo-bs">
+        <img src="RIVAL_Signature_logo.png" alt="Rival Signature" class="nav-logo-img nav-logo-sig">
+      </a>
+      <nav class="nav-links">
+        <a href="#despre">Despre</a>
+        <a href="#servicii">Servicii</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#echipa">Echipă</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#servicii" class="nav-services" id="navServices">Servicii</a>
+        <a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="nav-book" id="navBook">Rezervă acum</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Meniu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mnav" id="mnav">
+      <a href="#despre">Despre</a>
+      <a href="#servicii">Servicii</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#echipa">Echipă</a>
+      <a href="#contact">Contact</a>
+      <a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="mnav-book" id="mnavBook">Rezervă acum →</a>
+    </div>
+  </header>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-ov"></div>
+    <div class="hero-bar"></div>
+    <div class="hero-noise"></div>
+
+    <!-- BS hero: fullscreen photo-first, mirrors Signature structure -->
+    <div class="hero-content" id="bsHero">
+      <!-- orbs -->
+      <div class="bs-orb bs-orb-1"></div>
+      <div class="bs-orb bs-orb-2"></div>
+      <!-- centered content -->
+      <div class="bs-hero-content">
+        <p class="bs-eyebrow">Brașov · Est. 2023</p>
+        <div class="hero-logo-wrap">
+          <img src="RIVAL_logo_white.png" alt="Rival Barbershop" class="hero-logo-img">
+        </div>
+        <p class="bs-desc">Unde fiecare detaliu contează.<br>Precizie, stil și experiență autentică.</p>
+        <div class="hero-btns">
+          <a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="btn-s">Rezervă acum</a>
+          <a href="#servicii" class="btn-o">Servicii</a>
+        </div>
+        <div class="bs-stats">
+          <div class="bs-stat"><strong>Est. 2023</strong><span>Deschidere</span></div>
+          <div class="bs-stat"><strong>11k+</strong><span>Recenzii Mero</span></div>
+          <div class="bs-stat"><strong>4.99★</strong><span>Rating</span></div>
+        </div>
+        <div class="hero-address bs-hero-address">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Str. Mureșenilor 3, Brașov</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signature hero: fullscreen photo-first -->
+    <div class="hero-sig" id="sigHero">
+      <!-- Full-bleed photo background -->
+      <div class="sig-bg-full">
+        <img src="rivalsignature.png" alt="Rival Signature" id="sigHeroBgImg"/>
+        <div class="sig-bg-ov"></div>
+        <!-- floating petals / orbs -->
+        <div class="sig-orb sig-orb-1"></div>
+        <div class="sig-orb sig-orb-2"></div>
+        <div class="sig-orb sig-orb-3"></div>
+      </div>
+      <!-- Centered text overlay -->
+      <div class="sig-hero-content">
+        <p class="sig-eyebrow">Brașov · Est. 2026</p>
+        <div class="sig-logo-wrap">
+          <img src="RIVAL_Signature_logo.png" alt="Rival Signature" class="sig-logo-img">
+        </div>
+        <p class="sig-desc">Un sanctuar dedicat femeilor care știu ce vor.<br>Îngrijire atentă, produse premium, experiențe unice.</p>
+        <div class="sig-btns">
+          <a href="https://mero.ro/p/rival-signature" target="_blank" class="sig-btn-primary">Rezervă acum</a>
+          <a href="#servicii" class="sig-btn-ghost">Servicii</a>
+        </div>
+        <div class="sig-stats">
+          <div class="sig-stat"><strong>Est. 2026</strong><span>Deschidere</span></div>
+          <div class="sig-stat"><strong>105+</strong><span>Recenzii Mero</span></div>
+          <div class="sig-stat"><strong>5.0★</strong><span>Rating</span></div>
+        </div>
+        <div class="hero-address sig-hero-address">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Str. Mihai Viteazul, Brașov</span>
+        </div>
+      </div>
+    </div>
+
+
+    <a href="#despre" class="hero-scroll-hint" aria-label="Scroll"><span></span></a>
+  </section>
+
+  <!-- ══ TICKER ══ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>RIVAL BARBERSHOP</span><em>✦</em><span>TUNS · BARBĂ · STYLING</span><em>✦</em>
+      <span>STR. MUREȘENILOR 3</span><em>✦</em><span>RIVAL SIGNATURE</span><em>✦</em>
+      <span>BEAUTY &amp; GROOMING</span><em>✦</em><span>REZERVĂ ONLINE</span><em>✦</em>
+      <span>RIVAL BARBERSHOP</span><em>✦</em><span>TUNS · BARBĂ · STYLING</span><em>✦</em>
+      <span>STR. MUREȘENILOR 3</span><em>✦</em><span>RIVAL SIGNATURE</span><em>✦</em>
+      <span>BEAUTY &amp; GROOMING</span><em>✦</em><span>REZERVĂ ONLINE</span><em>✦</em>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ══ DESPRE ══ -->
+    <section class="sec despre-sec" id="despre">
+      <div class="wrap">
+        <!-- BARBERSHOP DESPRE -->
+        <div class="despre-grid bs-el reveal">
+          <div class="despre-text">
+            <span class="etag">Povestea noastră</span>
+            <h2 class="sh2">Pasiune.<br>Precizie.<br>Caracter.</h2>
+            <p class="bp">Rival Barbershop s-a deschis în <strong>2023</strong> pe Str. Mureșenilor 3 din Brașov cu un singur scop: să ofere cele mai bune tunsori dintr-un spațiu care să arate și să simtă ca un loc unde bărbații chiar vor să vină.</p>
+            <p class="bp">De-a lungul anilor, am crescut o echipă de specialiști care nu fac compromisuri. Fiecare tunsoare, fiecare contur de barbă — executate cu instrumente premium și o atenție aproape obsesivă la detalii.</p>
+            <div class="stats-row">
+              <div class="stat"><b class="sn" data-to="15000">0</b><span>Tunsori</span></div>
+              <div class="stat"><b class="sn" data-to="11000">0</b><span>Recenzii Mero</span></div>
+              <div class="stat"><b class="sn" data-to="3">0</b><span>Ani activi</span></div>
+            </div>
+          </div>
+          <div class="despre-img">
+            <div class="img-box">
+              <img src="rivalindoor.jpeg" alt="Rival Barbershop" loading="lazy"/>
+              <div class="img-label"><span>✦</span><strong>Est. 2023</strong></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- SIGNATURE DESPRE — completely different layout -->
+        <div class="sig-despre sig-el" style="display:none">
+          <div class="sig-despre-top reveal">
+            <span class="etag" style="background:var(--sig-pink-bg);color:var(--sig-pink)">Povestea Signature</span>
+            <h2 class="sh2 sig-despre-title">Un spațiu creat<br><em>pentru ea.</em></h2>
+          </div>
+          <div class="sig-despre-grid reveal">
+            <div class="sig-despre-text">
+              <p class="bp">Rival Signature s-a deschis în <strong>2026</strong> ca un răspuns la o cerere simplă și clară: un spațiu de îngrijire premium destinat femeilor, cu atmosfera, produsele și atenția pe care le merită cu adevărat.</p>
+              <p class="bp">Nu e un salon obișnuit. E un loc în care timpul se oprește pentru o oră sau două — unde fiecare serviciu este personalizat, fiecare produs ales cu grijă, fiecare specialist dedicat exclusiv experienței tale.</p>
+              <p class="bp">De la îngrijirea pielii la styling complet, Rival Signature este locul în care te transformi, nu doar te aranjezi.</p>
+              <a href="https://mero.ro/p/rival-signature" target="_blank" class="sig-btn-primary" style="margin-top:1.5rem;display:inline-flex">Rezervă o experiență →</a>
+            </div>
+            <div class="sig-despre-pillars">
+              <div class="sig-pillar">
+                <span class="sig-pillar-num">01</span>
+                <h4>Produse premium</h4>
+                <p>Folosim exclusiv branduri de top, alese pentru rezultate vizibile și îngrijire pe termen lung.</p>
+              </div>
+              <div class="sig-pillar">
+                <span class="sig-pillar-num">02</span>
+                <h4>Experiență personalizată</h4>
+                <p>Fiecare client are nevoile ei. Consultăm, ascultăm și adaptăm fiecare serviciu în consecință.</p>
+              </div>
+              <div class="sig-pillar">
+                <span class="sig-pillar-num">03</span>
+                <h4>Atmosferă unică</h4>
+                <p>Spațiu calm, luminos, cu un design gândit pentru confort și relaxare totală.</p>
+              </div>
+            </div>
+          </div>
+          <div class="sig-despre-stats reveal">
+            <div class="sig-kpi"><strong>2026</strong><span>Anul deschiderii</span></div>
+            <div class="sig-kpi"><strong>105+</strong><span>Recenzii Mero</span></div>
+            <div class="sig-kpi"><strong>5.0★</strong><span>Rating pe Mero</span></div>
+            <div class="sig-kpi"><strong>100%</strong><span>Programări online</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SERVICII ══ -->
+    <section class="sec servicii-sec" id="servicii">
+      <div class="wrap">
+        <div class="sec-hdr reveal">
+          <span class="etag">Ce oferim</span>
+          <h2 class="sh2">Servicii &amp; Prețuri</h2>
+          <p class="sdesc" id="sDesc">Fiecare serviciu executat cu precizie, cu produse premium și atenție la fiecare detaliu.</p>
+        </div>
+        <div class="accordion" id="accordion">
+
+          <!-- BARBERSHOP SERVICES — real Mero data -->
+          <p class="acc-cat bs-el">✦ Pachete</p>
+          <div class="acc-item bs-el acc-feat" data-open="false">
+            <button class="acc-head"><span class="acc-ico">⭐</span><span class="acc-name">PACHET RIVAL <small>cel mai popular</small></span><span class="acc-price">140 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns + barbă + spălat + epilat urechi &amp; nas. Tot ce ai nevoie într-o singură vizită premium.</p><ul><li>Tuns fade/clasic complet</li><li>Modelare &amp; conturare barbă</li><li>Spălat profesional</li><li>Epilat urechi &amp; nas</li><li>⏱ ~70 min · Haircut+beard+wash+waxing</li></ul><a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item bs-el acc-feat" data-open="false">
+            <button class="acc-head"><span class="acc-ico">✦</span><span class="acc-name">PACHET RIVAL ++ <small>experiența completă</small></span><span class="acc-price">180 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns + barbă + spălat + frecție + epilat urechi &amp; nas + pensat. Ritualu complet Rival.</p><ul><li>Tuns + barbă + spălat</li><li>Frecție relaxantă scalp</li><li>Epilat urechi &amp; nas</li><li>Pensat profesional</li><li>⏱ ~90 min</li></ul><a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <p class="acc-cat bs-el">✂ Servicii individuale</p>
+          <div class="acc-item bs-el" data-open="false">
+            <button class="acc-head"><span class="acc-ico">✂</span><span class="acc-name">Tuns fade/clasic + Spălat</span><span class="acc-price">80 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tunsoare completă fade sau clasic + spălat profesional. Include consultanță și styling.</p><ul><li>Consultanță personalizată</li><li>Tuns fade sau clasic</li><li>Spălat + finisare</li><li>⚠ Neprezentarea implică plata serviciului</li><li>⏱ ~40 min</li></ul><a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item bs-el" data-open="false">
+            <button class="acc-head"><span class="acc-ico">🎓</span><span class="acc-name">Tuns elevi/studenți</span><span class="acc-price">70 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns + spălat pentru elevi și studenți. Aceleași standarde, preț adaptat.</p><ul><li>Tuns personalizat + spălat</li><li>Necesar card de student / elev</li><li>⚠ Neprezentarea implică plata</li><li>⏱ ~35 min</li></ul><a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item bs-el" data-open="false">
+            <button class="acc-head"><span class="acc-ico">💈</span><span class="acc-name">Tuns + Barbă + Spălat</span><span class="acc-price">115 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Combinația clasică completă — tuns, barbă și spălat într-o singură sesiune.</p><ul><li>Tuns complet</li><li>Conturare &amp; modelare barbă</li><li>Spălat + styling</li><li>⏱ ~55 min</li></ul><a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item bs-el" data-open="false">
+            <button class="acc-head"><span class="acc-ico">🪒</span><span class="acc-name">Tuns Barbă</span><span class="acc-price">45 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Contur, scurtare și aranjare profesională a bărbii. Beard trim complet.</p><ul><li>Conturare cu mașinuța &amp; lama</li><li>Scurtare &amp; modelare</li><li>Finisare cu balm</li><li>⏱ ~25 min</li></ul><a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <p class="acc-cat bs-el">+ Experiență & Detalii</p>
+          <div class="acc-item bs-el" data-open="false">
+            <button class="acc-head"><span class="acc-ico">💆</span><span class="acc-name">Tuns + Spălat + Masaj Capilar</span><span class="acc-price">95 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns personalizat + spălat + masaj relaxant al scalpului pentru o experiență completă.</p><ul><li>Tuns complet</li><li>Spălat profesional</li><li>Masaj capilar relaxant</li><li>⏱ ~50 min</li></ul><a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item bs-el" data-open="false">
+            <button class="acc-head"><span class="acc-ico">🌟</span><span class="acc-name">Tuns + Barbă + Spălat + Masaj Capilar</span><span class="acc-price">130 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Ritual complet + relaxare. Tuns, barbă, spălat și masaj capilar.</p><ul><li>Tuns + barbă + spălat</li><li>Masaj capilar relaxant</li><li>Ritual complet de relaxare</li><li>⏱ ~70 min</li></ul><a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item bs-el" data-open="false">
+            <button class="acc-head"><span class="acc-ico">〰</span><span class="acc-name">Tuns + Barbă + Spălat + Pensat</span><span class="acc-price">155 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Contur complet + definire sprâncene. Haircut+beard+wash+eyebrows.</p><ul><li>Tuns + barbă + spălat</li><li>Pensat profesional</li><li>Look complet definit</li><li>⏱ ~80 min</li></ul><a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item bs-el" data-open="false">
+            <button class="acc-head"><span class="acc-ico">✏</span><span class="acc-name">Tuns + Spălat + Pensat</span><span class="acc-price">120 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns + detalii de precizie. Haircut+wash+eyebrows.</p><ul><li>Tuns complet + spălat</li><li>Pensat profesional</li><li>Finisaj precis</li><li>⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- SIGNATURE SERVICES — complete list -->
+
+          <!-- TUNS & BARBERING -->
+          <p class="acc-cat sig-el" style="display:none">✂ Tuns &amp; Barbering</p>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦</span><span class="acc-name">Pachet Signature <small>cel mai popular</small></span><span class="acc-price">140 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns + barbă + spălat + epilat urechi &amp; nas. Tot ce ai nevoie într-o singură vizită.</p><ul><li>Tuns Fade/Clasic + contur</li><li>Modelare &amp; conturare barbă</li><li>Spălat profesional + epilat urechi &amp; nas</li><li>⏱ ~70 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦✦</span><span class="acc-name">Pachet Signature ++ <small>experiența completă</small></span><span class="acc-price">180 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns + barbă + spălat + frecție + epilat urechi &amp; nas + pensat. Ritualul complet.</p><ul><li>Tuns + barbă + spălat</li><li>Frecție relaxantă</li><li>Epilat urechi &amp; nas + pensat profesional</li><li>⏱ ~90 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💈</span><span class="acc-name">Tuns Fade/Clasic + Spălat</span><span class="acc-price">80 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns tehnic + contur + spălat profesional.</p><ul><li>Consultanță stil + fade/clasic</li><li>Contur precis + spălat &amp; styling</li><li>⏱ ~40 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🎓</span><span class="acc-name">Tuns Elevi / Studenți</span><span class="acc-price">70–80 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns adaptat vârstei + spălat profesional + styling.</p><ul><li>Tuns personalizat + spălat + styling</li><li>⏱ ~45 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💈</span><span class="acc-name">Tuns + Barbă + Spălat</span><span class="acc-price">115 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns complet + contur barbă + spălat &amp; styling.</p><ul><li>Tuns + barbă + spălat</li><li>⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🪒</span><span class="acc-name">Tuns Barbă</span><span class="acc-price">45 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Contur, scurtare &amp; aranjare profesională.</p><ul><li>Contur cu mașinuța &amp; lama</li><li>Scurtare &amp; modelare + finisare cu balm</li><li>⏱ ~20–25 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <p class="acc-cat sig-el" style="display:none">+ Experiență &amp; Detalii Barbering</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💆</span><span class="acc-name">Tuns + Spălat + Masaj Capilar</span><span class="acc-price">95 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns personalizat + masaj relaxant scalp.</p><ul><li>Tuns complet + spălat</li><li>Masaj capilar relaxant</li><li>⏱ ~50 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🌟</span><span class="acc-name">Tuns + Barbă + Spălat + Masaj Capilar</span><span class="acc-price">130 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Ritual complet + relaxare.</p><ul><li>Tuns + barbă + spălat</li><li>Masaj capilar relaxant</li><li>⏱ ~70 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">〰</span><span class="acc-name">Tuns + Barbă + Spălat + Pensat</span><span class="acc-price">155 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Contur complet + definire sprâncene.</p><ul><li>Tuns + barbă + spălat</li><li>Pensat profesional</li><li>⏱ ~80 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✏</span><span class="acc-name">Tuns + Spălat + Pensat</span><span class="acc-price">120 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tuns + detalii de precizie.</p><ul><li>Tuns complet + spălat</li><li>Pensat profesional</li><li>⏱ ~50 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- COAFOR -->
+          <p class="acc-cat sig-el" style="display:none">💇 Coafor – Signature</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✂</span><span class="acc-name">Tuns Signature (Femei)</span><span class="acc-price">100 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Consultanță, tuns personalizat &amp; finisaj profesional.</p><ul><li>Consultanță + tuns adaptat fizionomiei</li><li>Spălat + uscat + styling</li><li>⏱ ~55 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🪮</span><span class="acc-name">Spălat &amp; Coafat Signature</span><span class="acc-price">120–180 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Spălat profesional + coafat perie / lejer.</p><ul><li>Șampon + balsam profesional</li><li>Coafat cu perie sau lejer</li><li>⏱ ~45 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✨</span><span class="acc-name">Coafat Special / Ocazie</span><span class="acc-price">100–300 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Bucle, styling elaborat, evenimente.</p><ul><li>Consultanță stilistică</li><li>Styling complet pentru ocazie</li><li>⏱ ~75 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💒</span><span class="acc-name">Coafat Mireasă <small>ziua evenimentului</small></span><span class="acc-price">250–500 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Styling personalizat pentru ziua evenimentului.</p><ul><li>Consultanță pre-eveniment</li><li>Styling complet &amp; durabil</li><li>Produse cu durată lungă</li><li>⏱ ~115 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- TRATAMENTE PAR -->
+          <p class="acc-cat sig-el" style="display:none">🌿 Tratamente Păr – Signature Treat</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🌿</span><span class="acc-name">Tratament Hidratant / Reparare – Wella</span><span class="acc-price">150–200 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Redă elasticitatea &amp; strălucirea părului cu produse Wella.</p><ul><li>Hidratare profundă</li><li>⏱ ~30 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💎</span><span class="acc-name">Tratament Intens Regenerant (Keratină/Botox) – Wella</span><span class="acc-price">250–500 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Refacere profundă a firului de păr cu produse Wella.</p><ul><li>Analiză tip păr + aplicare keratină / botox</li><li>Elasticitate &amp; strălucire refăcute</li><li>⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🌿</span><span class="acc-name">Tratament Hidratant / Reparare – Davines</span><span class="acc-price">150–200 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Redă elasticitatea &amp; strălucirea părului cu produse Davines.</p><ul><li>Hidratare profundă</li><li>⏱ ~30 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💎</span><span class="acc-name">Tratament Intens Regenerant (Keratină/Botox) – Davines</span><span class="acc-price">250–500 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Refacere profundă a firului de păr cu produse Davines.</p><ul><li>Analiză tip păr + aplicare keratină / botox</li><li>Elasticitate &amp; strălucire refăcute</li><li>⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦</span><span class="acc-name">Tratament Premium Personalizat</span><span class="acc-price">150–400 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Ales în funcție de tipul și nevoile părului.</p><ul><li>Consultanță tip păr + protocol personalizat</li><li>⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- COLORARE -->
+          <p class="acc-cat sig-el" style="display:none">🎨 Colorare – Signature</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🎨</span><span class="acc-name">Vopsit Rădăcină</span><span class="acc-price">300–450 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Acoperire uniformă &amp; culoare naturală.</p><ul><li>Consultanță + vopsit rădăcină complet</li><li>Spălat + styling · ⏱ ~90 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🖌</span><span class="acc-name">Vopsit Total</span><span class="acc-price">450–550 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Culoare completă, luciu intens.</p><ul><li>Consultanță + vopsit complet</li><li>Spălat + coafat · ⏱ ~2 h</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🌅</span><span class="acc-name">Tehnici Iluminare (Șuvițe / Balayage / Airtouch)</span><span class="acc-price">800–1600 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Efect natural, degradé fin. Produse profesionale certificate.</p><ul><li>Consultanță nuanță &amp; tehnică aleasă</li><li>Decolorare + toner / gloss + coafat inclus</li><li>⏱ ~4 h</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✨</span><span class="acc-name">Toner / Gloss Color</span><span class="acc-price">250–350 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Uniformizare &amp; intensificare culoare.</p><ul><li>Aplicare toner / gloss</li><li>⏱ ~45 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- EXTRA SERVICII COAFOR -->
+          <p class="acc-cat sig-el" style="display:none">+ Extra Servicii Coafor</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💆</span><span class="acc-name">Masaj suplimentar</span><span class="acc-price">30 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Masaj relaxant adăugat la orice serviciu.</p><ul><li>Se adaugă la serviciul ales · ⏱ ~10 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🌿</span><span class="acc-name">Tratament adăugat la serviciu</span><span class="acc-price">150–200 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tratament nutritiv suplimentar.</p><ul><li>Se adaugă la serviciul ales · ⏱ ~30 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🪮</span><span class="acc-name">Coafat cu extensii client</span><span class="acc-price">50 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Coafat pe extensii proprii ale clientei.</p><ul><li>Extensii aduse de clientă · ⏱ ~30 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- STYLING PROTECTIV -->
+          <p class="acc-cat sig-el" style="display:none">🪢 Styling Protectiv – Signature</p>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🪢</span><span class="acc-name">Box Braids Short</span><span class="acc-price">600–800 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Lungime până la umeri, densitate medie, consultanță inclusă.</p><ul><li>✔ Lungime până la umeri · ✔ Densitate medie</li><li>✔ Consultanță inclusă</li><li>⏱ ~4 h · Doar cu programare în avans</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🪢</span><span class="acc-name">Box Braids Medium</span><span class="acc-price">800–1000 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Lungime sub umeri / piept, densitate medie.</p><ul><li>✔ Lungime sub umeri / piept · ✔ Densitate medie</li><li>✔ Consultanță inclusă</li><li>⏱ ~5 h · Doar cu programare în avans</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🪢</span><span class="acc-name">Box Braids Long</span><span class="acc-price">1000–1300 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Lungime talie sau mai jos, densitate medie.</p><ul><li>✔ Lungime talie sau mai jos · ✔ Densitate medie</li><li>✔ Consultanță inclusă</li><li>⏱ ~6 h · Doar cu programare în avans</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">+</span><span class="acc-name">Extra Box Braids</span><span class="acc-price">100–300 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Opțiuni suplimentare. Prețul final se stabilește după consultanță.</p><ul><li>Densitate mare / braids subțiri: +100–200 lei</li><li>Material inclus: +150–300 lei</li><li>Design special / cărări creative: +100 lei</li><li>💡 Avans recomandat 30–50% (nereturnabil)</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- ABONAMENTE -->
+          <p class="acc-cat sig-el" style="display:none">📅 Abonamente Coafor – Signature</p>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦</span><span class="acc-name">Signature Weekly Glow 4 <small>4 ședințe / lună</small></span><span class="acc-price">360–480 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>4 ședințe / lună – spălat + coafat profesional.</p><ul><li>✔ Programare prioritară · ✔ Discount 15–20%</li><li>Valabilitate 30 zile · ⏱ ~45 min / ședință</li><li>💡 Abonamentele se achită integral în avans</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦✦</span><span class="acc-name">Signature Smooth Routine 8 <small>8 ședințe / lună</small></span><span class="acc-price">600–720 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>8 ședințe / lună – spălat + coafat.</p><ul><li>✔ Programare prioritară · ✔ Discount 15–20%</li><li>Valabilitate 30 zile · ⏱ ~45 min / ședință</li><li>💡 Abonamentele se achită integral în avans</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">👑</span><span class="acc-name">Signature Unlimited Style 12 <small>12 ședințe / lună</small></span><span class="acc-price">850–950 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>12 ședințe / lună – spălat + coafat. Cel mai complet abonament.</p><ul><li>✔ Programare prioritară · ✔ Discount 15–20%</li><li>Valabilitate 30 zile · ⏱ ~45 min / ședință</li><li>💡 Abonamentele se achită integral în avans</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- MANICHIURA -->
+          <p class="acc-cat sig-el" style="display:none">💅 Manichiură – Signature</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💅</span><span class="acc-name">Manichiură Signature (Dry / Clasică)</span><span class="acc-price">80–90 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Curățare, pilire, finisare profesională.</p><ul><li>Curățare cuticule + pilire + finisare</li><li>⏱ ~40 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✨</span><span class="acc-name">Semipermanent Signature <small>rezistență îndelungată</small></span><span class="acc-price">160 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Aplicare ojă semipermanentă pe unghia naturală. Aspect curat, rezistență îndelungată.</p><ul><li>Pregătire cuticule + ojă la alegere</li><li>Rezistență 2–3 săptămâni · ⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦</span><span class="acc-name">Semipermanent Signature Apex</span><span class="acc-price">180 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Întărire &amp; formă naturală. Ideal pentru unghii subțiri sau fragile.</p><ul><li>Rubber base / apex discret</li><li>⏱ ~75 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💎</span><span class="acc-name">Gel Signature – Construcție <small>arhitectură premium</small></span><span class="acc-price">200–250 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Construcție elegantă, proporții corecte, arhitectură premium.</p><ul><li>Construcție completă + formă personalizată</li><li>Finisaj impecabil · ⏱ ~2 h 30 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💅</span><span class="acc-name">Gel Signature – Întreținere</span><span class="acc-price">180–230 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Reechilibrare, refacere apex &amp; finisaj perfect.</p><ul><li>Reechilibrare + apex + lacuit</li><li>⏱ ~2 h</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦</span><span class="acc-name">Polygel Signature</span><span class="acc-price">200–250 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Rezistență + flexibilitate, look natural.</p><ul><li>Construcție polygel + look natural &amp; durabil</li><li>⏱ ~2 h</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">⚠</span><span class="acc-name">Întreținere realizată în alt salon</span><span class="acc-price">200–250 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Reechilibrare, corecții &amp; adaptare structură existentă.</p><ul><li>Evaluare prealabilă inclusă</li><li>⚠ Peste 2 unghii rupte = preț de construcție</li><li>⏱ ~1 h 40 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🌸</span><span class="acc-name">Manichiură Japoneză Signature</span><span class="acc-price">100 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Tratament natural de regenerare, luciu sănătos fără culoare.</p><ul><li>Regenerare naturală + luciu sănătos</li><li>⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🙌</span><span class="acc-name">Manichiură Bărbați Signature</span><span class="acc-price">90–100 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Curățare, pilire, îngrijire cuticule &amp; finisaj natural.</p><ul><li>Curățare completă + finisaj natural</li><li>⏱ ~40 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- PEDICHIURA -->
+          <p class="acc-cat sig-el" style="display:none">🦶 Pedichiură – Signature</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🦶</span><span class="acc-name">Pedichiură Signature (Estetică)</span><span class="acc-price">120 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Curățare, pilire, îngrijire cuticule.</p><ul><li>Curățare completă + pilire + îngrijire cuticule</li><li>⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✨</span><span class="acc-name">Pedichiură Semipermanentă</span><span class="acc-price">160 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Aplicare ojă semipermanentă pe unghia naturală.</p><ul><li>Aspect curat, rezistență îndelungată</li><li>⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🌸</span><span class="acc-name">Pedichiură Signature SPA <small>exfoliere + mască + masaj</small></span><span class="acc-price">150 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Include exfoliere, mască nutritivă &amp; masaj relaxant.</p><ul><li>Exfoliere + mască nutritivă</li><li>Masaj relaxant picioare · ⏱ ~90 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🙌</span><span class="acc-name">Pedichiură Bărbați Signature</span><span class="acc-price">130 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Îngrijire completă, aspect curat &amp; sănătos.</p><ul><li>Curățare completă + finisaj</li><li>⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- PACHETE MANI & PEDI -->
+          <p class="acc-cat sig-el" style="display:none">✦ Pachete Premium Mani &amp; Pedi</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🙌</span><span class="acc-name">Signature Hands</span><span class="acc-price">170–180 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Manichiură semipermanentă + tratament nutritiv.</p><ul><li>Semipermanent + tratament mâini · ⏱ ~75 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🦶</span><span class="acc-name">Signature Feet</span><span class="acc-price">180 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Pedichiură semipermanentă + tratament călcâie.</p><ul><li>Semipermanent + tratament picioare · ⏱ ~90 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">👑</span><span class="acc-name">Complete Signature Look <small>mani + pedi semipermanent</small></span><span class="acc-price">300 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Manichiură semipermanentă + Pedichiură semipermanentă.</p><ul><li>Manichiură semipermanentă + pedichiură semipermanentă</li><li>Ojă la alegere · ⏱ ~2 h 30 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- EXTRA MANI & PEDI -->
+          <p class="acc-cat sig-el" style="display:none">+ Extra Manichiură &amp; Pedichiură</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🤍</span><span class="acc-name">French Signature</span><span class="acc-price">40 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Linii curate, proporții elegante, look timeless. Se adaugă peste serviciul de bază.</p><ul><li>French clasic sau modern · ⏱ ~20 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🌅</span><span class="acc-name">Baby Boomer</span><span class="acc-price">40 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Degradé fin, efect natural &amp; sofisticat. Se adaugă peste serviciul de bază.</p><ul><li>Degradé roz-alb natural · ⏱ ~20 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💎</span><span class="acc-name">Aplicare Cristale</span><span class="acc-price">20 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Accente strălucitoare, fixare profesională. Se adaugă peste serviciul de bază.</p><ul><li>Cristale premium · ⏱ ~20 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- GENE -->
+          <p class="acc-cat sig-el" style="display:none">👁 Gene – Signature</p>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">👁</span><span class="acc-name">Laminare Gene InLei® Signature <small>lash lift italian</small></span><span class="acc-price">180 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Lash lift profesional italian + vopsire + tratament nutritiv.</p><ul><li>Sistem InLei® certificat</li><li>Curbură + vopsire + tratament nutritiv</li><li>Gene curbate, elastice &amp; mai sănătoase · ⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦</span><span class="acc-name">Laminare Gene InLei® + Tratament Intens Filler</span><span class="acc-price">200 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Include filler regenerant pentru gene fragile sau subțiri.</p><ul><li>Laminare InLei® + filler + hidratare &amp; refacere fir</li><li>⏱ ~80 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🎨</span><span class="acc-name">Vopsire Gene Profesională</span><span class="acc-price">60 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Intensificarea culorii genelor naturale.</p><ul><li>Culoare profesională · ⏱ ~20 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🌿</span><span class="acc-name">Tratament Regenerant Gene (Botox / Filler)</span><span class="acc-price">50 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Hidratare &amp; refacere fir de păr.</p><ul><li>Botox / filler pentru gene · ⏱ ~20 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- EXTENSII GENE -->
+          <p class="acc-cat sig-el" style="display:none">✦ Extensii Gene – Signature</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦</span><span class="acc-name">Extensii Gene 1D – Natural Look</span><span class="acc-price">120 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Aspect discret, elegant. Un fir per geană naturală.</p><ul><li>Look natural &amp; discret · ⏱ ~70 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦✦</span><span class="acc-name">Extensii Gene 2–3D – Volume Soft</span><span class="acc-price">180 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Mai multă densitate, păstrând naturalețea.</p><ul><li>2–3 fire per geană + densitate naturală · ⏱ ~2 h</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">👁</span><span class="acc-name">Extensii Gene 4–6D – Volume Glam <small>look intens</small></span><span class="acc-price">200–270 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Look intens, definit. Densitate mare cu aspect glamour.</p><ul><li>4–6 fire per geană + materiale premium</li><li>⏱ ~2 h 30 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✂</span><span class="acc-name">Întreținere Extensii Gene</span><span class="acc-price">100–250 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Îndepărtare sigură, protejarea genelor naturale.</p><ul><li>Îndepărtare &amp; reechilibrare · ⏱ ~90 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- SPRANCENE -->
+          <p class="acc-cat sig-el" style="display:none">〰 Sprâncene – Signature</p>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">〰</span><span class="acc-name">Laminare Sprâncene InLei® Signature</span><span class="acc-price">160 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Aranjare, fixare, disciplinare fir de păr. Include vopsire și tratament nutritiv.</p><ul><li>Sistem italian certificat InLei®</li><li>Vopsire + tratament nutritiv</li><li>Durată 4–6 săptămâni · ⏱ ~60 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✏</span><span class="acc-name">Stilizare Sprâncene (Pensat + Aranjare)</span><span class="acc-price">60 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Formă adaptată fizionomiei. Contur precis, aranjare naturală.</p><ul><li>Pensat cu ceară sau fir + formă personalizată</li><li>⏱ ~20 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🎨</span><span class="acc-name">Vopsire Sprâncene Profesională</span><span class="acc-price">40 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Culoare personalizată pentru un look definit.</p><ul><li>Vopsire profesională · ⏱ ~20 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">〰</span><span class="acc-name">Stilizare &amp; Vopsire Sprâncene</span><span class="acc-price">85 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Formă + culoare + finisaj.</p><ul><li>Stilizare + vopsire · ⏱ ~30 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✏</span><span class="acc-name">Stilizare Sprâncene Bărbați (Pensat + Aranjare)</span><span class="acc-price">40 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Formă adaptată fizionomiei.</p><ul><li>Pensat + aranjare · ⏱ ~20 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- PACHETE GENE & SPRANCENE -->
+          <p class="acc-cat sig-el" style="display:none">✦ Pachete Premium Gene &amp; Sprâncene</p>
+          <div class="acc-item sig-el acc-feat" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🌟</span><span class="acc-name">Signature Look <small>gene + sprâncene InLei®</small></span><span class="acc-price">310 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Laminare gene InLei® + Laminare sprâncene InLei®. Pachetul premium complet.</p><ul><li>Laminare gene cu tratament</li><li>Laminare &amp; vopsire sprâncene InLei®</li><li>⏱ ~2 h</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦</span><span class="acc-name">Full Brow &amp; Lash Glow</span><span class="acc-price">230 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Laminare gene + stilizare &amp; vopsire sprâncene.</p><ul><li>Laminare gene + stilizare &amp; vopsire sprâncene</li><li>⏱ ~90 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✦</span><span class="acc-name">Laminare + Stilizare &amp; Vopsire Sprâncene</span><span class="acc-price">200 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Laminare + stilizare &amp; vopsire sprâncene. Produse profesionale InLei®.</p><ul><li>Laminare + stilizare sprâncene InLei®</li><li>⏱ ~75 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+
+          <!-- EXTRA GENE -->
+          <p class="acc-cat sig-el" style="display:none">+ Extra Servicii Gene – Signature</p>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">🎨</span><span class="acc-name">Gene Colorate</span><span class="acc-price">30 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Accente de culoare pentru un look personalizat. Se adaugă la serviciul de bază.</p><ul><li>Culoare pe extensii · ⏱ ~20 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">💎</span><span class="acc-name">Aplicare Pietricele / Accesorii Gene</span><span class="acc-price">20 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Detalii strălucitoare, fixare profesională. Se adaugă la serviciul de bază.</p><ul><li>Pietricele premium · ⏱ ~5 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">↑</span><span class="acc-name">Curbură Specială M / L</span><span class="acc-price">30 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Efect lifting accentuat. Ideal pentru ochi adânciți sau pleoapă căzută.</p><ul><li>Curbură M sau L specială · ⏱ ~5 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+          <div class="acc-item sig-el" data-open="false" style="display:none">
+            <button class="acc-head"><span class="acc-ico">✂</span><span class="acc-name">Îndepărtare Extensii Gene (fără reaplicare)</span><span class="acc-price">40 lei</span><span class="acc-arr">+</span></button>
+            <div class="acc-body"><p>Îndepărtare sigură, protejarea genelor naturale.</p><ul><li>Îndepărtare delicată fără afectarea genelor naturale</li><li>⏱ ~30 min</li></ul><a href="https://mero.ro/p/rival-signature" target="_blank" class="acc-book">Rezervă →</a></div>
+          </div>
+        </div>
+        <!-- price strip -->
+        <div class="price-footer">
+          <div class="pf-cell bs-el"><strong>80</strong><span>Tuns + Spălat</span></div>
+          <div class="pf-cell bs-el"><strong>45</strong><span>Tuns Barbă</span></div>
+          <div class="pf-cell bs-el"><strong>115</strong><span>Tuns + Barbă</span></div>
+          <div class="pf-cell bs-el"><strong>140</strong><span>Pachet RIVAL</span></div>
+          <div class="pf-cell sig-el" style="display:none"><strong>80</strong><span>Tuns Fade</span></div>
+          <div class="pf-cell sig-el" style="display:none"><strong>160</strong><span>Semipermanent</span></div>
+          <div class="pf-cell sig-el" style="display:none"><strong>180</strong><span>Laminare Gene</span></div>
+          <div class="pf-cell sig-el" style="display:none"><strong>300</strong><span>Look Complet</span></div>
+          <div class="pf-cta">
+            <a href="https://mero.ro/p/rival-barbershopmore" target="_blank" id="pfCta">Rezervă online acum</a>
+            <span class="pf-cta-note">· Prețuri în lei · Fără taxe ascunse</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ GALERIE — full-screen horizontal carousel ══ -->
+    <section class="sec galerie-sec bs-el" id="galerie">
+      <div class="wrap">
+        <div class="sec-hdr reveal">
+          <span class="etag">Lucrările noastre</span>
+          <h2 class="sh2">Galerie</h2>
+        </div>
+      </div>
+      <div class="gal-stage">
+        <!-- drag hint -->
+        <div class="gal-drag-hint" id="galDragHint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <span>Glisează</span>
+        </div>
+        <!-- prev/next arrows -->
+        <button class="gal-arr gal-prev" id="galPrev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="gal-arr gal-next" id="galNext" aria-label="Următor">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <!-- track -->
+        <div class="gal-track" id="galTrack">
+          <div class="gal-slide" data-label="Detalii perfecte" data-sub="Fiecare linie contează">
+            <img src="workdone1.jpeg" alt="Detalii tunsoare Rival"/>
+          </div>
+          <div class="gal-slide" data-label="Finisare impecabilă" data-sub="Rezultate reale">
+            <img src="workdone2.jpeg" alt="Finisare Rival Barbershop"/>
+          </div>
+          <div class="gal-slide" data-label="Atmosferă Rival" data-sub="Str. Mureșenilor 3">
+            <img src="rivalfront.jpeg" alt="Rival Barbershop exterior"/>
+          </div>
+          <div class="gal-slide" data-label="Fotolii Rival" data-sub="Confort & Stil">
+            <img src="chairs.jpeg" alt="Fotolii Rival Barbershop"/>
+          </div>
+          <div class="gal-slide" data-label="Lumini & Atmosferă" data-sub="Interior Rival">
+            <img src="indoorlight.jpeg" alt="Interior Rival Barbershop"/>
+          </div>
+          <div class="gal-slide" data-label="Locația Noastră" data-sub="Str. Mureșenilor 3">
+            <img src="location.jpeg" alt="Locație Rival Barbershop"/>
+          </div>
+          <div class="gal-slide" data-label="Spațiu Premium" data-sub="Interior Rival">
+            <img src="locationin.jpeg" alt="Interior Rival"/>
+          </div>
+        </div>
+        <!-- label overlay -->
+        <div class="gal-info" id="galInfo">
+          <strong id="galLabel">Classic Cut</strong>
+          <span id="galSub">Tunsoare &amp; Styling</span>
+        </div>
+        <!-- counter -->
+        <div class="gal-counter"><span id="galCurr">1</span> / <span id="galTotal">7</span></div>
+      </div>
+      <!-- instagram link -->
+      <div class="wrap">
+        <a href="https://www.instagram.com" target="_blank" class="gal-more">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+          <span>Mai mult pe Instagram</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══ ECHIPA — spotlight layout ══ -->
+    <section class="sec echipa-sec" id="echipa">
+      <div class="wrap">
+        <div class="sec-hdr reveal">
+          <span class="etag">Oamenii noștri</span>
+          <h2 class="sh2">Echipa</h2>
+          <p class="sdesc" id="eDesc">Profesioniști pasionați, dedicați perfecțiunii în fiecare detaliu.</p>
+        </div>
+
+        <!-- BS SPOTLIGHT -->
+        <div class="spotlight bs-el" id="bsSpotlight">
+          <div class="spot-photo-wrap">
+            <div class="spot-photo" id="bsPhoto">
+              <img src="andu.jpeg" alt="Andu" id="bsImg"/>
+              <div class="spot-photo-overlay"></div>
+            </div>
+          </div>
+          <div class="spot-right">
+            <div class="spot-active-info" id="bsInfo">
+              <span class="spot-num" id="bsNum">01</span>
+              <h3 class="spot-name" id="bsName">Andu</h3>
+              <p class="spot-role" id="bsRole">Senior Barber</p>
+              <p class="spot-bio" id="bsBio">Andu este un reper în echipă, apreciat pentru experiența sa și pentru stilul clasic executat impecabil. Pune accent pe echilibru, proporții și detalii fine, oferind tunsori curate, elegante și ușor de purtat. Clienții lui revin pentru constanță și încrederea într-un rezultat premium, de fiecare dată.</p>
+              <a class="spot-cta" href="https://mero.ro/p/rival-barbershopmore?page=worker_details&workerId=64b7d11cc79f80416c22bec4&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource=" target="_blank" id="bsCta">Rezervă cu Andu →</a>
+            </div>
+            <ul class="spot-list" id="bsList">
+              <li class="spot-li active" data-idx="0">
+                <span class="sli-num">01</span>
+                <span class="sli-name">Andu</span>
+                <span class="sli-role">Senior Barber</span>
+              </li>
+              <li class="spot-li" data-idx="1">
+                <span class="sli-num">02</span>
+                <span class="sli-name">Gabriel</span>
+                <span class="sli-role">Barber</span>
+              </li>
+              <li class="spot-li" data-idx="2">
+                <span class="sli-num">03</span>
+                <span class="sli-name">Toni</span>
+                <span class="sli-role">Barber</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SIG SPOTLIGHT -->
+        <div class="spotlight sig-el" id="sigSpotlight" style="display:none">
+          <div class="spot-photo-wrap">
+            <div class="spot-photo" id="sigPhoto">
+              <img src="anda_signature.jpeg" alt="Anda" id="sigImg"/>
+              <div class="spot-photo-overlay"></div>
+            </div>
+          </div>
+          <div class="spot-right">
+            <div class="spot-active-info spot-sig-info" id="sigInfo">
+              <span class="spot-num sig-spot-num" id="sigNum">01</span>
+              <h3 class="spot-name" id="sigName">Anda</h3>
+              <p class="spot-role" id="sigRole">Tehnician unghii</p>
+              <p class="spot-bio" id="sigBio">Anda este genul de tehnician care pune accent pe detalii și pe lucrul bine făcut. Fie că vorbim de întreținere, construcție sau design, fiecare set este realizat cu precizie și grijă pentru sănătatea unghiei. Stilul ei este curat, echilibrat și adaptat fiecărei cliente — pentru un rezultat care arată bine și rezistă.</p>
+              <a class="spot-cta sig-spot-cta" href="https://mero.ro/p/rival-signature?page=worker_details&workerId=699c35861fcd26c66de6a9bf&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource=" target="_blank" id="sigCta">Rezervă cu Anda →</a>
+            </div>
+            <ul class="spot-list" id="sigList">
+              <li class="spot-li active" data-idx="0">
+                <span class="sli-num">01</span>
+                <span class="sli-name">Anda</span>
+                <span class="sli-role">Tehnician unghii</span>
+              </li>
+              <li class="spot-li" data-idx="1">
+                <span class="sli-num">02</span>
+                <span class="sli-name">Andreea</span>
+                <span class="sli-role">Gene &amp; Sprâncene</span>
+              </li>
+              <li class="spot-li" data-idx="2">
+                <span class="sli-num">03</span>
+                <span class="sli-name">Rocky</span>
+                <span class="sli-role">Hairstylist</span>
+              </li>
+              <li class="spot-li" data-idx="3">
+                <span class="sli-num">04</span>
+                <span class="sli-name">Vali</span>
+                <span class="sli-role">Barber</span>
+              </li>
+              <li class="spot-li" data-idx="4">
+                <span class="sli-num">05</span>
+                <span class="sli-name">Alex</span>
+                <span class="sli-role">Barber &amp; Owner</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ RECENZII ══ -->
+    <section class="sec reviews-sec" id="recenzii">
+      <div class="wrap">
+        <div class="sec-hdr reveal">
+          <span class="etag">Ce spun clienții</span>
+          <h2 class="sh2">Recenzii</h2>
+          <p class="sdesc">Recenzii verificate de pe <a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="mero-link" id="meroLink">Mero.ro</a></p>
+        </div>
+
+        <!-- Rating summary bar -->
+        <div class="rv-summary reveal" id="rvSummary">
+          <div class="rv-score">
+            <span class="rv-big" id="rvBigScore">4.99</span>
+            <div class="rv-stars-big">★★★★★</div>
+            <span class="rv-total" id="rvTotalCount">11.000+ recenzii verificate</span>
+          </div>
+          <div class="rv-bars" id="rvBars">
+            <div class="rv-bar-row"><span>5★</span><div class="rv-bar-track"><div class="rv-bar-fill" id="bar5" style="width:96%"></div></div><span id="pct5">96%</span></div>
+            <div class="rv-bar-row"><span>4★</span><div class="rv-bar-track"><div class="rv-bar-fill" id="bar4" style="width:3%"></div></div><span id="pct4">3%</span></div>
+            <div class="rv-bar-row"><span>3★</span><div class="rv-bar-track"><div class="rv-bar-fill" id="bar3" style="width:1%"></div></div><span id="pct3">1%</span></div>
+          </div>
+        </div>
+
+        <!-- Review cards grid -->
+        <div class="rv-grid" id="rvGrid">
+          <div class="rv-loading" id="rvLoading">
+            <div class="rv-spinner"></div>
+            <span>Se încarcă recenziile…</span>
+          </div>
+        </div>
+
+        <div class="rv-actions">
+          <button class="rv-refresh" id="rvRefresh">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+            Afișează alte recenzii
+          </button>
+          <a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="rv-mero-cta" id="rvMeroCta">
+            Vezi toate recenziile pe Mero.ro →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACT ══ -->
+    <section class="sec contact-sec" id="contact">
+      <div class="wrap">
+        <div class="sec-hdr reveal">
+          <span class="etag">Unde ne găsești</span>
+          <h2 class="sh2">Locații</h2>
+        </div>
+        <div class="locs-grid">
+          <div class="lcard bs-lcard reveal">
+            <span class="lc-tag">Rival Barbershop</span>
+            <h3>Str. Mureșenilor 3<br>Brașov</h3>
+            <div class="lc-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Lun–Vin: 10:00–19:00 · Sâm: 10:00–16:00 · Dum: Închis</span></div>
+            <div class="lc-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07A19.5 19.5 0 013.07 12 19.8 19.8 0 01.01 3.4 2 2 0 012 1.21h4.08a2 2 0 012 1.72c.127.96.361 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 9.09A16 16 0 0015 17l1.27-1.27a2 2 0 012.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0122 18.92z"/></svg><a href="tel:+40764754985">+40 764 754 985</a></div>
+            <div class="lc-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/></svg><a href="https://instagram.com/rival.barbershop" target="_blank">@rival.barbershop</a></div>
+            <a href="https://mero.ro/p/rival-barbershopmore" target="_blank" class="btn-s lc-btn">Rezervă Barbershop</a>
+          </div>
+          <div class="lcard sig-lcard reveal-d2">
+            <span class="lc-tag sig-lc-tag">Rival Signature</span>
+            <h3>Str. Mihai Viteazul<br>Brașov 500174</h3>
+            <div class="lc-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Lun: 10:00–19:00 · Mar–Vin: 9:00–19:00 · Sâm: 9:00–16:00 · Dum: Închis</span></div>
+            <div class="lc-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07A19.5 19.5 0 013.07 12 19.8 19.8 0 01.01 3.4 2 2 0 012 1.21h4.08a2 2 0 012 1.72c.127.96.361 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 9.09A16 16 0 0015 17l1.27-1.27a2 2 0 012.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0122 18.92z"/></svg><a href="tel:+40773730082">+40 773 730 082</a></div>
+            <div class="lc-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/></svg><a href="https://www.instagram.com/rivalsignature/" target="_blank">@rivalsignature</a></div>
+            <a href="https://mero.ro/p/rival-signature" target="_blank" class="btn-sig lc-btn">Rezervă Signature</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="ft-wrap">
+      <div class="ft-logo-block">
+        <img src="RIVAL_logo_white.png" alt="Rival Barbershop" class="ft-logo-img ft-logo-bs">
+        <img src="RIVAL_Signature_logo.png" alt="Rival Signature" class="ft-logo-img ft-logo-sig">
+        <p>Brașov · Două locații · O singură excelență.</p>
+      </div>
+      <div class="ft-links">
+        <a href="#despre">Despre</a><a href="#servicii">Servicii</a>
+        <a href="#galerie">Galerie</a><a href="#echipa">Echipă</a><a href="#contact">Contact</a>
+      </div>
+      <div class="ft-social">
+        <a href="https://instagram.com/rival.barbershop" id="ftInsta" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://facebook.com/RIVALbarbershop.andmore" id="ftFacebook" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="ft-copy">© 2026 Rival Barber Shop &amp; More · Brașov, România</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
