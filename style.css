@@ -266,7 +266,7 @@ body.loc-sig .hero-bar{opacity:0}
 body.loc-sig .hero-content{display:none}
 
 /* BS ambient orbs */
-.bs-orb{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none}
+.bs-orb{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none;will-change:transform}
 .bs-orb-1{width:350px;height:350px;background:rgba(61,122,46,.12);top:-5%;right:0%;animation-delay:0s}
 .bs-orb-2{width:250px;height:250px;background:rgba(78,154,60,.08);bottom:15%;left:5%;animation-delay:-4s}
 
@@ -403,7 +403,7 @@ body.loc-sig .hero-sig{display:flex;align-items:center;justify-content:center}
 }
 
 /* Floating ambient orbs */
-.sig-orb{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none;animation:orbFloat 8s ease-in-out infinite}
+.sig-orb{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none;will-change:transform;animation:orbFloat 8s ease-in-out infinite}
 .sig-orb-1{width:400px;height:400px;background:rgba(184,150,106,.18);top:-10%;right:-5%;animation-delay:0s}
 .sig-orb-2{width:300px;height:300px;background:rgba(255,200,180,.12);bottom:10%;left:5%;animation-delay:-3s}
 .sig-orb-3{width:200px;height:200px;background:rgba(184,150,106,.15);top:40%;right:20%;animation-delay:-5s}
@@ -610,6 +610,7 @@ body.loc-sig .acc-head:hover{background:rgba(184,150,106,.06)}
   position:relative;
   height:70vh;min-height:400px;max-height:700px;
   overflow:hidden;
+  touch-action:pan-y;
   margin-top:2.5rem;
   cursor:grab;
   user-select:none;
@@ -1308,6 +1309,7 @@ body.loc-sig .footer::before{
   .spotlight{grid-template-columns:1fr}
   .spot-photo-wrap{min-height:380px;max-height:420px}
   .ft-wrap{grid-template-columns:1fr;gap:2rem;text-align:center}
+  .ft-logo-block{display:flex;flex-direction:column;align-items:center}
   .ft-links{flex-direction:row;flex-wrap:wrap;justify-content:center}
   .ft-social{justify-content:center}
 }

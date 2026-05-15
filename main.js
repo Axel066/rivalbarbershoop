@@ -573,7 +573,9 @@ function onParallaxScroll(){
     orb.style.transform = `translateY(${sy * (0.05 + i*0.03)}px)`;
   });
 }
-window.addEventListener('scroll', onParallaxScroll, {passive:true});
+if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+  window.addEventListener('scroll', onParallaxScroll, {passive:true});
+}
 
 /* ══════════════════════════════════════
    MAGNETIC PILL BUTTONS — gentle pull
