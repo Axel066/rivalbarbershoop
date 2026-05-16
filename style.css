@@ -62,7 +62,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);
 /* ── BUTTONS ── */
 .btn-s{
   display:inline-flex;align-items:center;gap:.4rem;
-  padding:13px 28px;
+  padding:15px 36px;
   background:var(--btn);color:var(--btn-t);
   font-family:var(--font);font-size:.75rem;font-weight:700;
   letter-spacing:.1em;text-transform:uppercase;
@@ -76,7 +76,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);
 /* Ghost / outline button — needs clearly visible border */
 .btn-o{
   display:inline-flex;align-items:center;
-  padding:11px 26px;
+  padding:13px 32px;
   border:2px solid rgba(255,255,255,.75);
   color:#fff;
   font-family:var(--font);font-size:.75rem;font-weight:700;
@@ -107,7 +107,7 @@ body.loc-sig .btn-o:hover{background:rgba(184,150,106,.12);border-color:var(--si
 /* ── SIGNATURE HERO BUTTONS — on photo ── */
 .sig-btn-primary{
   display:inline-flex;align-items:center;
-  padding:13px 28px;
+  padding:15px 36px;
   background:var(--sig-pink);color:#fff;
   font-family:var(--font);font-size:.73rem;font-weight:700;
   letter-spacing:.12em;text-transform:uppercase;
@@ -125,7 +125,7 @@ body.loc-sig .btn-o:hover{background:rgba(184,150,106,.12);border-color:var(--si
 
 .sig-btn-ghost{
   display:inline-flex;align-items:center;
-  padding:11px 26px;
+  padding:13px 32px;
   border:2px solid rgba(255,255,255,.75);
   color:#fff;
   font-family:var(--font);font-size:.73rem;font-weight:700;
@@ -151,9 +151,9 @@ body.loc-sig .btn-ghost-sig:hover{background:rgba(184,150,106,.1)}
 .reveal.vis,.reveal-r.vis,.reveal-d1.vis,.reveal-d2.vis,.reveal-d3.vis{opacity:1;transform:none}
 
 /* ── LOCATION PILL ── */
-.loc-pill{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);z-index:1000;
+.loc-pill{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);z-index:1000;
   display:flex;align-items:center;background:rgba(10,10,10,.9);
-  border:1px solid rgba(255,255,255,.1);border-radius:99px;padding:5px;
+  border:1px solid rgba(255,255,255,.1);border-radius:99px;padding:6px 6px 9px;
   backdrop-filter:blur(16px);box-shadow:0 8px 32px rgba(0,0,0,.5);transition:background .3s,border-color .3s}
 body.loc-sig .loc-pill{background:rgba(250,246,242,.93);border-color:rgba(0,0,0,.1)}
 .lp-btn{display:flex;align-items:center;gap:7px;padding:8px 18px;
@@ -188,7 +188,7 @@ body.loc-sig .navbar.scrolled{
 .nav-logo{display:flex;align-items:center;flex-shrink:0}
 .nav-logo-img{width:auto;display:none;transition:filter .35s}
 body.loc-bs .nav-logo-bs{display:block;height:26px}
-body.loc-sig .nav-logo-sig{display:block;height:38px;filter:invert(1)}
+body.loc-sig .nav-logo-sig{display:block;height:46px;filter:invert(1)}
 body.loc-sig .navbar.scrolled .nav-logo-sig{filter:none}
 .nav-links{display:flex;gap:1.8rem;margin-left:auto}
 .nav-links a{
@@ -320,22 +320,33 @@ body.loc-sig .hero-content{display:none}
   color:rgba(255,255,255,.85);
   line-height:1;
 }
+/* Subtle dark radial behind centred content — helps subtitle readability */
+.bs-hero-content::before,
+.sig-hero-content::before{
+  content:'';
+  position:absolute;
+  inset:-20% -30%;
+  background:radial-gradient(ellipse at center 55%,rgba(0,0,0,.45) 0%,transparent 65%);
+  pointer-events:none;
+  z-index:-1;
+}
+
 /* BS description */
 .bs-desc{
-  font-size:clamp(.85rem,1.8vw,1rem);
+  font-size:clamp(.95rem,2.1vw,1.15rem);
   font-weight:300;
-  color:rgba(255,255,255,.55);
+  color:rgba(255,255,255,.72);
   line-height:1.8;
-  margin:2rem 0 2rem;
+  margin:2.5rem 0 2.5rem;
   opacity:0;animation:fadeup .6s .5s forwards;
 }
-.hero-btns{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center;opacity:0;animation:fadeup .6s .65s forwards}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;opacity:0;animation:fadeup .6s .65s forwards}
 
 /* BS stats — same style as Signature */
 .bs-stats{
-  display:flex;flex-direction:row;flex-wrap:wrap;gap:.7rem;
+  display:flex;flex-direction:row;flex-wrap:wrap;gap:.9rem;
   justify-content:center;
-  margin-top:2.5rem;
+  margin-top:3rem;
   opacity:0;animation:fadeup .6s .85s forwards;
   margin-bottom:3rem;
 }
@@ -343,15 +354,15 @@ body.loc-sig .hero-content{display:none}
   background:rgba(255,255,255,.08);
   border:1px solid rgba(255,255,255,.15);
   backdrop-filter:blur(12px);
-  border-radius:8px;padding:.6rem 1.1rem;text-align:center;
+  border-radius:8px;padding:.85rem 1.5rem;text-align:center;
   flex:0 0 auto;
 }
 .bs-stat strong{
-  display:block;font-size:1.1rem;font-weight:800;
-  color:#fff;line-height:1;margin-bottom:3px;
+  display:block;font-size:1.25rem;font-weight:800;
+  color:#fff;line-height:1;margin-bottom:4px;
 }
 .bs-stat span{
-  font-size:.58rem;font-weight:600;letter-spacing:.1em;
+  font-size:.6rem;font-weight:600;letter-spacing:.1em;
   text-transform:uppercase;color:rgba(255,255,255,.5);
 }
 
@@ -362,12 +373,12 @@ body.loc-sig .hero-content{display:none}
   display:flex;align-items:center;justify-content:center;gap:.45rem;
   margin-top:1.1rem;
   opacity:0;animation:fadeup .6s 1.05s forwards;
-  font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
 }
-.hero-address svg{width:11px;height:11px;flex-shrink:0}
-.bs-hero-address{color:rgba(255,255,255,.38)}
+.hero-address svg{width:14px;height:14px;flex-shrink:0}
+.bs-hero-address{color:rgba(255,255,255,.68)}
 .bs-hero-address svg{stroke:var(--bs-green)}
-.sig-hero-address{color:rgba(255,255,255,.5)}
+.sig-hero-address{color:rgba(255,255,255,.75)}
 .sig-hero-address svg{stroke:var(--sig-pink)}
 .hb-dot{width:6px;height:6px;border-radius:50%;background:var(--bs-green);animation:pulse 2s infinite;transition:background var(--trans)}
 .hero-scroll-hint{position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);z-index:4;display:flex;flex-direction:column;align-items:center}
@@ -466,7 +477,7 @@ body.loc-sig .hero-sig{display:flex;align-items:center;justify-content:center}
   margin-bottom:.8rem;
 }
 .hero-logo-img{
-  height:clamp(72px,12vw,150px);
+  height:clamp(68px,11.5vw,140px);
   width:auto;
   filter:drop-shadow(0 4px 32px rgba(0,0,0,.35));
 }
@@ -481,33 +492,33 @@ body.loc-sig .hero-sig{display:flex;align-items:center;justify-content:center}
   filter:invert(1) drop-shadow(0 4px 32px rgba(0,0,0,.25));
 }
 .sig-hero-content .sig-desc{
-  font-size:clamp(.85rem,1.8vw,1.05rem);
+  font-size:clamp(.95rem,2.1vw,1.15rem);
   font-weight:300;
-  color:rgba(255,255,255,.65);
+  color:rgba(255,255,255,.82);
   line-height:1.8;
-  margin:1.2rem 0 2rem;
+  margin:2rem 0 2.5rem;
   opacity:0;animation:fadeup .6s .5s forwards;
 }
 .sig-hero-content .sig-btns{
   justify-content:center;opacity:0;animation:fadeup .6s .65s forwards;
 }
 .sig-hero-content .sig-stats{
-  display:flex;flex-direction:row;flex-wrap:wrap;gap:.7rem;
+  display:flex;flex-direction:row;flex-wrap:wrap;gap:.9rem;
   justify-content:center;margin-top:3rem;opacity:0;animation:fadeup .6s .85s forwards;margin-bottom:3rem;
 }
 .sig-hero-content .sig-stat{
-  background:rgba(255,255,255,.12);
-  border:1px solid rgba(255,255,255,.2);
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.18);
   backdrop-filter:blur(12px);
-  border-radius:8px;padding:.5rem 1rem;text-align:center;
+  border-radius:8px;padding:.85rem 1.5rem;text-align:center;
   flex:0 0 auto;
 }
 .sig-hero-content .sig-stat strong{
-  display:block;font-size:1.1rem;font-weight:800;
-  color:#fff;line-height:1;margin-bottom:3px;
+  display:block;font-size:1.25rem;font-weight:800;
+  color:#fff;line-height:1;margin-bottom:4px;
 }
 .sig-hero-content .sig-stat span{
-  font-size:.58rem;font-weight:600;letter-spacing:.1em;
+  font-size:.6rem;font-weight:600;letter-spacing:.1em;
   text-transform:uppercase;color:rgba(255,255,255,.6);
 }
 /* bottom badge */
@@ -1327,11 +1338,7 @@ body.loc-sig .footer::before{
   .bs-rival-sub::after{display:none}
   .hero-em{font-size:clamp(1rem,5vw,1.4rem);color:rgba(255,255,255,.8)}
   .hero-btns{flex-direction:column;align-items:center;gap:.6rem;width:100%;padding:0 1.5rem;flex-wrap:nowrap}
-  .btn-s,.btn-o{width:100%;justify-content:center;padding:13px 0;font-size:.72rem}
   .bs-stats{margin-top:1.5rem;margin-bottom:5.5rem;gap:.5rem;padding:0 .5rem}
-  .bs-stat{padding:.55rem 1rem;flex:1;min-width:0}
-  .bs-stat strong{font-size:.95rem}
-  .bs-stat span{font-size:.5rem;letter-spacing:.08em}
   .acc-head{padding:.85rem 1rem}
   .acc-name{font-size:.8rem}
   .acc-price{font-size:.82rem}
@@ -1344,8 +1351,21 @@ body.loc-sig .footer::before{
   .gal-info strong{font-size:1.1rem}
   .spot-active-info{padding:2rem 1.5rem 1.5rem}
   .spot-li{padding:.9rem 1.5rem}
+  /* ── UNIFIED MOBILE HERO — both tabs identical structure ── */
+  /* Buttons: same font across both sides */
+  .btn-s,.btn-o,.sig-btn-primary,.sig-btn-ghost{width:100%;justify-content:center;padding:13px 0;font-size:.73rem}
+  /* Stats cards: identical padding + typography */
+  .bs-stat,.sig-hero-content .sig-stat{padding:.5rem .9rem;flex:1;min-width:0}
+  .bs-stat strong,.sig-hero-content .sig-stat strong{font-size:.92rem}
+  .bs-stat span,.sig-hero-content .sig-stat span{font-size:.5rem;letter-spacing:.08em}
+  /* Logo wraps: same bottom gap so buttons land at the same vertical position */
+  .hero-logo-wrap,.sig-logo-wrap{margin-bottom:.6rem}
+  /* Sig logo: match visual size to BS logo on narrow screens */
+  .sig-logo-img{height:clamp(80px,14vw,150px)}
   /* Signature hero mobile fixes */
-  .sig-hero-content{padding:0 1rem;width:100%}
+  /* Align Sig hero to top on mobile so text doesn't overlap faces */
+  .hero-sig{align-items:flex-start}
+  .sig-hero-content{padding:5rem 1rem 0;width:100%;margin-top:0}
   .sig-hero-content .sig-h1{font-size:clamp(4rem,18vw,7rem);line-height:.85}
   .sig-rival-wrap{align-items:center}
   .sig-rival-sub{
@@ -1356,21 +1376,17 @@ body.loc-sig .footer::before{
   .sig-rival-dot{width:1em;height:1em}
   .sig-hero-content .sig-desc{display:none}
   .sig-hero-content .sig-btns{flex-direction:column;align-items:center;gap:.6rem;width:100%;padding:0 1.5rem}
-  .sig-btn-primary,.sig-btn-ghost{width:100%;justify-content:center;padding:13px 0}
   .sig-hero-content .sig-stats{
     margin-top:1.5rem;margin-bottom:5.5rem;
     gap:.5rem;padding:0 .5rem;
   }
-  .sig-hero-content .sig-stat{padding:.45rem .8rem;flex:1;min-width:0}
-  .sig-hero-content .sig-stat strong{font-size:.9rem}
-  .sig-hero-content .sig-stat span{font-size:.48rem}
   .sig-hero-badge{display:none}
   .sig-orb{display:none}
   .rv-grid{grid-template-columns:1fr}
   .rv-summary{flex-direction:column;gap:1.5rem;padding:1.5rem}
   .rv-actions{flex-direction:column;align-items:center;text-align:center}
   .lcard{padding:1.75rem}
-  .loc-pill{bottom:1rem}
+  .loc-pill{bottom:1.25rem;padding:5px 5px 8px}
   .lp-btn{padding:7px 14px;font-size:.62rem}
   .stats-row{gap:1.25rem}
   .img-label{bottom:-.75rem;left:-.75rem;padding:.75rem 1rem}
@@ -1379,7 +1395,7 @@ body.loc-sig .footer::before{
 @media(max-width:480px){
   .hero-big{font-size:clamp(3.8rem,20vw,7rem)}
   .hero-btns{gap:.6rem}
-  .btn-s,.btn-o{padding:10px 18px;font-size:.68rem}
+  .btn-s,.btn-o,.sig-btn-primary,.sig-btn-ghost{padding:12px 0;font-size:.68rem}
   .gal-stage{height:72vw}
   .gal-info strong{font-size:.95rem}
   .sig-despre-stats{grid-template-columns:1fr 1fr}
