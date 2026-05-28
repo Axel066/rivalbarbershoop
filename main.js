@@ -115,6 +115,10 @@ function switchLoc(loc){
   document.querySelectorAll('.bs-el').forEach(el=>el.style.display=loc==='bs'?'':'none');
   document.querySelectorAll('.sig-el').forEach(el=>el.style.display=loc==='sig'?'':'none');
 
+  /* update galerie nav links */
+  const galHref = loc==='sig' ? '#galerie-sig' : '#galerie';
+  document.querySelectorAll('a[href^="#galerie"]').forEach(a=>a.href=galHref);
+
   /* sig hero zoom-out animation — restart on every Signature switch */
   const sigHeroEl = document.getElementById('sigHero');
   if(sigHeroEl){
