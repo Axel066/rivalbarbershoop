@@ -535,6 +535,10 @@ body.loc-sig .hero-sig{display:flex;align-items:center;justify-content:center}
 .ticker-wrap{overflow:hidden;background:var(--bs-green);padding:11px 0;transition:background var(--trans)}
 body.loc-sig .ticker-wrap{background:rgba(28,20,25,.95)}
 .ticker-track{display:flex;white-space:nowrap;animation:ticker 30s linear infinite}
+.ticker-track-bs{display:flex}
+.ticker-track-sig{display:none}
+body.loc-sig .ticker-track-bs{display:none}
+body.loc-sig .ticker-track-sig{display:flex}
 .ticker-track span{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;padding:0 1rem}
 .ticker-track em{font-style:normal;font-size:.72rem;color:rgba(255,255,255,.4);padding:0 .2rem}
 
