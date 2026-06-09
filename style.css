@@ -1354,7 +1354,7 @@ body.loc-sig .footer::before{
   .bs-rival-sub::after{display:none}
   .hero-em{font-size:clamp(1rem,5vw,1.4rem);color:rgba(255,255,255,.8)}
   .hero-btns{flex-direction:column;align-items:center;gap:.6rem;width:100%;padding:0 1.5rem;flex-wrap:nowrap}
-  .bs-stats{margin-top:1.5rem;margin-bottom:5.5rem;gap:.5rem;padding:0 .5rem}
+  .bs-stats{margin-top:1rem;margin-bottom:5.5rem;gap:.5rem;padding:0 .5rem}
   .acc-head{padding:.85rem 1rem}
   .acc-name{font-size:.8rem}
   .acc-price{font-size:.82rem}
@@ -1376,12 +1376,12 @@ body.loc-sig .footer::before{
   .bs-stat span,.sig-hero-content .sig-stat span{font-size:.5rem;letter-spacing:.08em}
   /* Logo wraps: same bottom gap so buttons land at the same vertical position */
   .hero-logo-wrap,.sig-logo-wrap{margin-bottom:.6rem}
-  /* Sig logo: match visual size to BS logo on narrow screens */
-  .sig-logo-img{height:clamp(80px,14vw,150px)}
+  /* Sig logo: smaller on mobile */
+  .sig-logo-img{height:clamp(58px,11vw,105px)}
   /* Signature hero mobile fixes */
   /* Align Sig hero to top on mobile so text doesn't overlap faces */
   .hero-sig{align-items:flex-start}
-  .sig-hero-content{padding:5rem 1rem 0;width:100%;margin-top:0}
+  .sig-hero-content{padding:3.5rem 1rem 0;width:100%;margin-top:0}
   .sig-hero-content .sig-h1{font-size:clamp(4rem,18vw,7rem);line-height:.85}
   .sig-rival-wrap{align-items:center}
   .sig-rival-sub{
@@ -1391,9 +1391,12 @@ body.loc-sig .footer::before{
   }
   .sig-rival-dot{width:1em;height:1em}
   .sig-hero-content .sig-desc{display:none}
-  .sig-hero-content .sig-btns{flex-direction:column;align-items:center;gap:.6rem;width:100%;padding:0 1.5rem}
+  .sig-hero-content .sig-btns{flex-direction:column;align-items:center;gap:.5rem;width:100%;padding:0 1.5rem}
+  /* SERVICII hidden on mobile — accessible via hamburger menu */
+  .hero-btns .btn-o,
+  .sig-hero-content .sig-btns .sig-btn-ghost{display:none}
   .sig-hero-content .sig-stats{
-    margin-top:1.5rem;margin-bottom:5.5rem;
+    margin-top:1rem;margin-bottom:5.5rem;
     gap:.5rem;padding:0 .5rem;
   }
   .sig-hero-badge{display:none}
