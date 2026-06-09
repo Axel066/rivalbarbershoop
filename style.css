@@ -793,7 +793,19 @@ body.loc-sig .sig-spot-num{color:var(--sig-pink)}
 /* switching state */
 .spot-active-info.switching .spot-name,
 .spot-active-info.switching .spot-role,
-.spot-active-info.switching .spot-bio{opacity:0;transform:translateY(8px)}
+.spot-active-info.switching .spot-bio,
+.spot-active-info.switching .bio-toggle{opacity:0;transform:translateY(8px)}
+/* bio expand / collapse */
+.spot-bio.clamped{overflow:hidden;max-height:5.8em;margin-bottom:.5rem;transition:max-height .42s cubic-bezier(.4,0,.2,1),opacity .3s,color var(--trans)}
+.spot-bio.clamped.expanded{max-height:60em}
+.bio-toggle{
+  display:none;background:none;border:none;cursor:pointer;
+  padding:0;margin-bottom:1.5rem;
+  color:var(--acc);font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  opacity:.7;transition:opacity .2s,transform .3s;
+}
+.bio-toggle.visible{display:inline-block}
+.bio-toggle:hover{opacity:1}
 /* member list */
 .spot-list{flex:0 0 auto}
 .spot-li{

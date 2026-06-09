@@ -406,6 +406,9 @@ const bsMembers=[
   {img:'toni.jpeg',num:'03',name:'Toni',role:'Barber',
    bio:'Toni îmbină stilul clasic cu influențe moderne, punând accent pe detalii și precizie. Oferă tunsori curate, bine definite și durabile, potrivite pentru orice context. Este alegerea potrivită pentru un look îngrijit și sigur.',
    cta:'Rezervă cu Toni',url:'https://mero.ro/p/rival-barbershopmore?page=worker_details&workerId=697f7415820fb4aa444ac598&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
+  {img:'radutatoo_barbershop.jpeg',num:'04',name:'Radu',role:'Tattoo Artist',imgPos:'top center',
+   bio:'Pentru Radu, un tatuaj nu începe în momentul în care acul atinge pielea, ci în momentul în care o idee prinde contur. Fiecare proiect este construit de la zero, pornind de la povestea, personalitatea și direcția pe care clientul dorește să o exprime, transformând o simplă idee într-o lucrare cu identitate proprie. Stilul său îmbină atenția pentru compoziție, detaliul tehnic și libertatea artistică, rezultând tatuaje care nu urmăresc doar tendințe, ci sunt gândite să rămână relevante și valoroase în timp. De la proiecte fine și minimaliste până la lucrări ample, fiecare design este adaptat anatomiei și caracterului persoanei care îl poartă. Dincolo de rezultat, experiența colaborării ocupă un loc la fel de important — comunicarea deschisă, implicarea în procesul creativ și atenția acordată fiecărui detaliu contribuie la un mediu confortabil și profesionist, în care fiecare client participă activ la construirea propriului proiect. Pentru Radu, scopul nu este doar realizarea unui tatuaj reușit, ci crearea unei lucrări autentice, care să reprezinte cu adevărat omul care o poartă.',
+   cta:'Rezervă cu Radu',url:'https://mero.ro/p/rival-barbershopmore'},
 ];
 const sigMembers=[
   {img:'anda_signature.jpeg',num:'01',name:'Anda',role:'Tehnician unghii',
@@ -437,18 +440,39 @@ function initSpotlight(listId, members, imgId, numId, nameId, roleId, bioId, cta
   const photo = img?.closest('.spot-photo');
   if(!list||!img) return;
 
+  const BIO_MAX = 260;
+  let bioToggle = null;
+  if(bio){
+    bioToggle = document.createElement('button');
+    bioToggle.className = 'bio-toggle';
+    bioToggle.textContent = 'Citește mai mult ↓';
+    bio.insertAdjacentElement('afterend', bioToggle);
+    bioToggle.addEventListener('click', ()=>{
+      const open = bio.classList.toggle('expanded');
+      bioToggle.textContent = open ? 'Citește mai puțin ↑' : 'Citește mai mult ↓';
+    });
+  }
+
   function activate(idx){
     const m=members[idx];
     if(!m) return;
-    // animate out
     if(photo) photo.classList.add('switching');
     if(infoEl) infoEl.classList.add('switching');
     setTimeout(()=>{
-      if(img){ img.src=m.img; img.alt=m.name; }
+      if(img){ img.src=m.img; img.alt=m.name; img.style.objectPosition=m.imgPos||'center'; }
       if(num)  num.textContent=m.num;
       if(name) name.textContent=m.name;
       if(role) role.textContent=m.role;
-      if(bio)  bio.textContent=m.bio;
+      if(bio){
+        bio.textContent=m.bio;
+        const long=m.bio.length>BIO_MAX;
+        bio.classList.toggle('clamped',long);
+        bio.classList.remove('expanded');
+        if(bioToggle){
+          bioToggle.textContent='Citește mai mult ↓';
+          bioToggle.classList.toggle('visible',long);
+        }
+      }
       if(cta){ cta.textContent=m.cta+' →'; cta.href=m.url; }
       if(photo) photo.classList.remove('switching');
       if(infoEl) infoEl.classList.remove('switching');
