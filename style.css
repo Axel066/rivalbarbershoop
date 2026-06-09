@@ -1354,7 +1354,7 @@ body.loc-sig .footer::before{
   .bs-rival-sub::after{display:none}
   .hero-em{font-size:clamp(1rem,5vw,1.4rem);color:rgba(255,255,255,.8)}
   .hero-btns{flex-direction:column;align-items:center;gap:.6rem;width:100%;padding:0 1.5rem;flex-wrap:nowrap}
-  .bs-stats{margin-top:1rem;margin-bottom:5.5rem;gap:.5rem;padding:0 .5rem}
+  .bs-stats{margin-top:1rem;margin-bottom:5.5rem}
   .acc-head{padding:.85rem 1rem}
   .acc-name{font-size:.8rem}
   .acc-price{font-size:.82rem}
@@ -1370,10 +1370,18 @@ body.loc-sig .footer::before{
   /* ── UNIFIED MOBILE HERO — both tabs identical structure ── */
   /* Buttons: same font across both sides */
   .btn-s,.btn-o,.sig-btn-primary,.sig-btn-ghost{width:100%;justify-content:center;padding:13px 0;font-size:.73rem}
-  /* Stats cards: identical padding + typography */
-  .bs-stat,.sig-hero-content .sig-stat{padding:.5rem .9rem;flex:1;min-width:0}
-  .bs-stat strong,.sig-hero-content .sig-stat strong{font-size:.92rem}
-  .bs-stat span,.sig-hero-content .sig-stat span{font-size:.5rem;letter-spacing:.08em}
+  /* Stats: plain text row — no cards, vertical separators */
+  .bs-stats,.sig-hero-content .sig-stats{flex-wrap:nowrap;gap:0;padding:0 1rem}
+  .bs-stat,.sig-hero-content .sig-stat{
+    flex:1;min-width:0;
+    background:none;border:none;backdrop-filter:none;border-radius:0;
+    padding:.55rem .5rem;
+  }
+  .bs-stat+.bs-stat,.sig-hero-content .sig-stat+.sig-stat{
+    border-left:1px solid rgba(255,255,255,.18);
+  }
+  .bs-stat strong,.sig-hero-content .sig-stat strong{font-size:1.05rem;letter-spacing:-.01em}
+  .bs-stat span,.sig-hero-content .sig-stat span{font-size:.48rem;letter-spacing:.1em;opacity:.55}
   /* Logo wraps: same bottom gap so buttons land at the same vertical position */
   .hero-logo-wrap,.sig-logo-wrap{margin-bottom:.6rem}
   /* Sig logo: smaller on mobile */
@@ -1395,10 +1403,7 @@ body.loc-sig .footer::before{
   /* SERVICII hidden on mobile — accessible via hamburger menu */
   .hero-btns .btn-o,
   .sig-hero-content .sig-btns .sig-btn-ghost{display:none}
-  .sig-hero-content .sig-stats{
-    margin-top:1rem;margin-bottom:5.5rem;
-    gap:.5rem;padding:0 .5rem;
-  }
+  .sig-hero-content .sig-stats{margin-top:1rem;margin-bottom:5.5rem}
   .sig-hero-badge{display:none}
   .sig-orb{display:none}
   .rv-grid{grid-template-columns:1fr}
@@ -1418,8 +1423,7 @@ body.loc-sig .footer::before{
   .gal-stage{height:72vw}
   .gal-info strong{font-size:.95rem}
   .sig-despre-stats{grid-template-columns:1fr 1fr}
-  .sig-stats{gap:.5rem}
-  .sig-stat{padding:.4rem .6rem}
+  .sig-stats{gap:0}
   .sig-hero-content .sig-stats{margin-bottom:6rem}
   .sig-rival-sub{font-size:clamp(1rem,3.5vw,1.4rem)}
 }
