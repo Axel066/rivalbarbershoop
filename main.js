@@ -191,7 +191,7 @@ function closeItem(item){item.classList.remove('open');item.querySelector('.acc-
 if(accordion){
   accordion.addEventListener('click',e=>{
     const head=e.target.closest('.acc-head');
-    if(!head) return;
+    if(!head||head.classList.contains('cat-head')) return;
     const item=head.closest('.acc-item');
     if(!item) return;
     const isOpen=item.classList.contains('open');
@@ -199,6 +199,13 @@ if(accordion){
     isOpen?closeItem(item):openItem(item);
   });
 }
+
+/* ── CATEGORY GROUPS (Signature servicii) ── */
+document.querySelectorAll('.cat-head').forEach(head=>{
+  head.addEventListener('click',()=>{
+    head.closest('.cat-group')?.classList.toggle('open');
+  });
+});
 
 /* ── SCROLL REVEAL ── */
 const revObs=new IntersectionObserver(entries=>{

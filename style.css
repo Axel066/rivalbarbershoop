@@ -560,6 +560,13 @@ body.loc-sig .ticker-track-sig{display:flex}
 .sig-despre-title{font-style:normal}
 .sig-despre-title em{font-style:italic;color:var(--sig-pink)}
 .sig-despre-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-bottom:3rem}
+/* refined, airy body copy — lighter weight, less aggressive than default */
+.sig-despre-text .bp{font-weight:300;font-size:.95rem;line-height:1.95;color:var(--sig-mu);letter-spacing:.004em}
+/* elegant editorial lead-in instead of harsh bold */
+.sig-despre-text .bp:first-child{font-size:1.4rem;font-weight:300;line-height:1.45;letter-spacing:-.01em;color:var(--sig-tx);margin-bottom:1.6rem;padding-bottom:1.5rem;border-bottom:1px solid var(--sig-brd)}
+.sig-despre-text .bp:first-child strong{font-weight:400;color:var(--sig-pink)}
+/* closing line — subtle emphasis, gold accent */
+.sig-despre-text .bp:nth-last-of-type(1){color:var(--sig-tx);font-weight:400;margin-top:.3rem}
 .sig-despre-text .sig-btn-primary{margin-top:1.5rem}
 .sig-despre-pillars{display:flex;flex-direction:column;gap:1.5rem}
 .sig-pillar{border-left:3px solid rgba(184,150,106,.3);padding-left:1.4rem;transition:border-color .25s}
@@ -1267,7 +1274,7 @@ body.loc-sig .hl-flip{ color:var(--sig-pink); }
 body.loc-bs .sec-hdr::after{background:var(--bs-green)}
 body.loc-sig .sec-hdr::after{background:var(--sig-pink)}
 
-/* ── ACCORDION CATEGORY LABELS ── */
+/* ── ACCORDION CATEGORY LABELS (BS) ── */
 .acc-cat{
   font-size:.58rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;
   color:var(--mu);padding:.6rem 0 .3rem;margin-top:1.2rem;
@@ -1275,6 +1282,36 @@ body.loc-sig .sec-hdr::after{background:var(--sig-pink)}
   transition:color var(--trans),border-color var(--trans);
 }
 .acc-cat:first-child{margin-top:0}
+
+/* ── SIGNATURE CATEGORY GROUPS ── */
+.cat-group{margin-bottom:.5rem}
+.cat-head{
+  width:100%;display:flex;justify-content:space-between;align-items:center;
+  padding:1.05rem 1.4rem;
+  background:var(--card);border:1px solid var(--brd);border-radius:10px;
+  cursor:pointer;text-align:left;
+  font-family:var(--font);font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--tx);transition:border-color .25s,background .2s,border-radius .2s;
+}
+.cat-head:hover{border-color:var(--acc);background:var(--tag-bg)}
+.cat-name{flex:1}
+.cat-arr{
+  font-size:1rem;color:var(--acc);flex-shrink:0;margin-left:1rem;
+  transition:transform .3s var(--ease);
+}
+.cat-group.open>.cat-head{
+  border-bottom-left-radius:0;border-bottom-right-radius:0;border-color:var(--acc);
+}
+.cat-group.open>.cat-head .cat-arr{transform:rotate(45deg)}
+.cat-body{
+  display:none;
+  border:1px solid var(--acc);border-top:none;
+  border-bottom-left-radius:10px;border-bottom-right-radius:10px;
+  padding:.4rem;background:var(--card);
+}
+.cat-group.open>.cat-body{display:block}
+.cat-body .acc-item{border-radius:6px;margin-bottom:.3rem}
+.cat-body .acc-item:last-child{margin-bottom:0}
 
 /* Featured items */
 .acc-item.acc-feat{border-left:3px solid var(--acc)}
@@ -1414,7 +1451,16 @@ body.loc-sig .footer::before{
   .lp-btn{padding:7px 14px;font-size:.62rem}
   .stats-row{gap:1.25rem}
   .img-label{bottom:-.75rem;left:-.75rem;padding:.75rem 1rem}
+  /* Signature despre — refined typography on mobile */
+  .sig-despre-top{margin-bottom:2rem}
+  .sig-despre-text .bp:first-child{font-size:1.18rem;line-height:1.4;margin-bottom:1.3rem;padding-bottom:1.2rem}
+  .sig-despre-text .bp{font-size:.92rem;line-height:1.85}
+  .sig-despre-grid{gap:2.2rem}
+  .sig-pillar{padding-left:1.1rem}
   .sig-despre-stats{grid-template-columns:repeat(2,1fr)}
+  .sig-kpi{padding:1.4rem 1rem}
+  .sig-kpi strong{font-size:1.7rem}
+  .sig-kpi span{font-size:.56rem}
 }
 @media(max-width:480px){
   .hero-big{font-size:clamp(3.8rem,20vw,7rem)}
