@@ -408,7 +408,7 @@ const bsMembers=[
    cta:'Rezervă cu Toni',url:'https://mero.ro/p/rival-barbershopmore?page=worker_details&workerId=697f7415820fb4aa444ac598&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
   {img:'radutatoo_barbershop.jpeg',num:'04',name:'Radu',role:'Tattoo Artist',imgPos:'top center',
    bio:'Pentru Radu, un tatuaj nu începe în momentul în care acul atinge pielea, ci în momentul în care o idee prinde contur. Fiecare proiect este construit de la zero, pornind de la povestea, personalitatea și direcția pe care clientul dorește să o exprime, transformând o simplă idee într-o lucrare cu identitate proprie. Stilul său îmbină atenția pentru compoziție, detaliul tehnic și libertatea artistică, rezultând tatuaje care nu urmăresc doar tendințe, ci sunt gândite să rămână relevante și valoroase în timp. De la proiecte fine și minimaliste până la lucrări ample, fiecare design este adaptat anatomiei și caracterului persoanei care îl poartă. Dincolo de rezultat, experiența colaborării ocupă un loc la fel de important — comunicarea deschisă, implicarea în procesul creativ și atenția acordată fiecărui detaliu contribuie la un mediu confortabil și profesionist, în care fiecare client participă activ la construirea propriului proiect. Pentru Radu, scopul nu este doar realizarea unui tatuaj reușit, ci crearea unei lucrări autentice, care să reprezinte cu adevărat omul care o poartă.',
-   cta:'Rezervă cu Radu',url:'https://mero.ro/p/rival-barbershopmore'},
+   cta:'Rezervă cu Radu',url:'https://mero.ro/p/rival-barbershopmore?page=select_worker&serviceIds=65a78fd9a3ff03896c159f39&css=services_list'},
 ];
 const sigMembers=[
   {img:'anda_signature.jpeg',num:'01',name:'Anda',role:'Tehnician unghii',
