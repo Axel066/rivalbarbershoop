@@ -250,10 +250,7 @@ body.loc-sig .hero-bg{opacity:0;pointer-events:none}
   background:linear-gradient(to bottom,rgba(20,20,22,.5) 0%,rgba(20,20,22,.65) 50%,rgba(20,20,22,.5) 100%);
   transition:opacity .6s}
 body.loc-sig .hero-ov{opacity:0;pointer-events:none}
-.hero-bar{position:absolute;top:0;left:0;bottom:0;width:4px;z-index:3;
-  background:linear-gradient(to bottom,transparent,var(--bs-green) 30%,var(--bs-green-b) 70%,transparent);
-  transition:opacity .5s}
-body.loc-sig .hero-bar{opacity:0}
+.hero-bar{display:none}
 .hero-noise{position:absolute;inset:0;z-index:1;opacity:.03;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-size:150px}
@@ -1446,7 +1443,7 @@ body.loc-sig .footer::before{
   .sig-hero-content .sig-btns .sig-btn-ghost{display:none}
   .sig-hero-content .sig-stats{margin-top:1rem;margin-bottom:5.5rem}
   .sig-hero-badge{display:none}
-  .sig-orb{display:none}
+  .sig-orb,.bs-orb{display:none}
   .rv-grid{grid-template-columns:1fr}
   .rv-summary{flex-direction:column;gap:1.5rem;padding:1.5rem}
   .rv-actions{flex-direction:column;align-items:center;text-align:center}
