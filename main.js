@@ -430,6 +430,9 @@ const sigMembers=[
   {img:'vali_signature.jpeg',num:'05',name:'Vali',role:'Barber',
    bio:'Vali este despre precizie și control. Tunsori curate, fade-uri bine executate și atenție la fiecare detaliu. În scaunul lui, lucrurile sunt simple: tehnică bună, atmosferă relaxată și un rezultat care se vede.',
    cta:'Rezervă cu Vali',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=699c363a1fcd26c66de6c540&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
+  {img:'madalinucenic.jpeg',num:'06',name:'Mădălin',role:'Ucenic Barber',
+   bio:'Mădălin este la începutul carierei sale în barbering, ghidat de pasiune, ambiție și dorința de a deveni un profesionist desăvârșit. În fiecare zi își dezvoltă abilitățile alături de echipa Rival, acumulând experiență și perfecționând tehnicile moderne de tuns și styling masculin. Atent la detalii, răbdător și dornic să învețe, Mădălin înțelege că excelența se construiește prin muncă, disciplină și dedicare. Pentru el, fiecare client reprezintă o nouă oportunitate de a evolua și de a transforma pasiunea pentru barbering într-o carieră de succes.',
+   cta:'Rezervă cu Mădălin',url:'https://mero.ro/p/rival-signature'},
 ];
 
 function initSpotlight(listId, members, imgId, numId, nameId, roleId, bioId, ctaId, isSignature){
