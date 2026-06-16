@@ -549,7 +549,11 @@ body.loc-sig .ticker-track-sig{display:flex}
 .stat b{display:block;font-size:2.4rem;font-weight:900;color:var(--bs-green-b);line-height:1;margin-bottom:4px}
 .stat span{font-size:.65rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mu)}
 .img-box{position:relative}
-.img-box img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;filter:grayscale(8%);transition:filter var(--trans)}
+.img-box img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:4px;filter:grayscale(8%);transition:filter var(--trans)}
+/* refined despre copy + elegant lead-in (parity with Signature) */
+.despre-text .bp{line-height:1.85}
+.despre-text .bp:first-of-type{font-size:1.4rem;font-weight:300;line-height:1.45;letter-spacing:-.01em;color:var(--tx);margin-bottom:1.5rem;padding-bottom:1.4rem;border-bottom:1px solid var(--brd)}
+.despre-text .bp:first-of-type strong{font-weight:400;color:var(--bs-green-b)}
 .img-label{position:absolute;bottom:-1rem;left:-1rem;background:var(--bs-green);color:#fff;
   padding:1rem 1.4rem;font-size:.8rem;font-weight:600;display:flex;align-items:center;gap:.4rem;border-radius:4px}
 
@@ -1455,6 +1459,7 @@ body.loc-sig .footer::before{
   .sig-despre-top{margin-bottom:2rem}
   .sig-despre-text .bp:first-child{font-size:1.18rem;line-height:1.4;margin-bottom:1.3rem;padding-bottom:1.2rem}
   .sig-despre-text .bp{font-size:.92rem;line-height:1.85}
+  .despre-text .bp:first-of-type{font-size:1.18rem;line-height:1.4;margin-bottom:1.3rem;padding-bottom:1.2rem}
   .sig-despre-grid{gap:2.2rem}
   .sig-pillar{padding-left:1.1rem}
   .sig-despre-stats{grid-template-columns:repeat(2,1fr)}

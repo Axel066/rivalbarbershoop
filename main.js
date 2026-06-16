@@ -407,32 +407,29 @@ const bsMembers=[
   {img:'andu.jpeg',num:'01',name:'Andu',role:'Senior Barber',
    bio:'Andu este un reper în echipă, apreciat pentru experiența sa și pentru stilul clasic executat impecabil. Pune accent pe echilibru, proporții și detalii fine, oferind tunsori curate, elegante și ușor de purtat. Clienții lui revin pentru constanță și încrederea într-un rezultat premium, de fiecare dată.',
    cta:'Rezervă cu Andu',url:'https://mero.ro/p/rival-barbershopmore?page=worker_details&workerId=64b7d11cc79f80416c22bec4&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
-  {img:'gabriel.jpeg',num:'02',name:'Gabriel',role:'Barber',
-   bio:'Gabriel aduce creativitate și energie în fiecare tunsoare. Lucrează cu forme și texturi moderne, adaptând fiecare look în funcție de stilul clientului. Rezultatele sale sunt actuale, expresive și echilibrate.',
-   cta:'Rezervă cu Gabriel',url:'https://mero.ro/p/rival-barbershopmore?page=worker_details&workerId=689a01cb09fb54e4e555b15c&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
-  {img:'toni.jpeg',num:'03',name:'Toni',role:'Barber',
+  {img:'toni.jpeg',num:'02',name:'Toni',role:'Barber',
    bio:'Toni îmbină stilul clasic cu influențe moderne, punând accent pe detalii și precizie. Oferă tunsori curate, bine definite și durabile, potrivite pentru orice context. Este alegerea potrivită pentru un look îngrijit și sigur.',
    cta:'Rezervă cu Toni',url:'https://mero.ro/p/rival-barbershopmore?page=worker_details&workerId=697f7415820fb4aa444ac598&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
-  {img:'radutatoo_barbershop.jpeg',num:'04',name:'Radu',role:'Tattoo Artist',imgPos:'top center',
+  {img:'radutatoo_barbershop.jpeg',num:'03',name:'Radu',role:'Tattoo Artist',imgPos:'top center',
    bio:'Pentru Radu, un tatuaj nu începe în momentul în care acul atinge pielea, ci în momentul în care o idee prinde contur. Fiecare proiect este construit de la zero, pornind de la povestea, personalitatea și direcția pe care clientul dorește să o exprime, transformând o simplă idee într-o lucrare cu identitate proprie. Stilul său îmbină atenția pentru compoziție, detaliul tehnic și libertatea artistică, rezultând tatuaje care nu urmăresc doar tendințe, ci sunt gândite să rămână relevante și valoroase în timp. De la proiecte fine și minimaliste până la lucrări ample, fiecare design este adaptat anatomiei și caracterului persoanei care îl poartă. Dincolo de rezultat, experiența colaborării ocupă un loc la fel de important — comunicarea deschisă, implicarea în procesul creativ și atenția acordată fiecărui detaliu contribuie la un mediu confortabil și profesionist, în care fiecare client participă activ la construirea propriului proiect. Pentru Radu, scopul nu este doar realizarea unui tatuaj reușit, ci crearea unei lucrări autentice, care să reprezinte cu adevărat omul care o poartă.',
    cta:'Rezervă cu Radu',url:'https://mero.ro/p/rival-barbershopmore?page=select_worker&serviceIds=65a78fd9a3ff03896c159f39&css=services_list'},
 ];
 const sigMembers=[
-  {img:'anda_signature.jpeg',num:'01',name:'Anda',role:'Tehnician unghii',
-   bio:'Anda este genul de tehnician care pune accent pe detalii și pe lucrul bine făcut. Fie că vorbim de întreținere, construcție sau design, fiecare set este realizat cu precizie și grijă pentru sănătatea unghiei. Stilul ei este curat, echilibrat și adaptat fiecărei cliente — pentru un rezultat care arată bine și rezistă.',
-   cta:'Rezervă cu Anda',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=699c35861fcd26c66de6a9bf&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
-  {img:'andrada_signature.jpeg',num:'02',name:'Andrada',role:'Tehnician gene & sprâncene',
-   bio:'Cu peste 4 ani de experiență în domeniul extensiilor de gene și al stilizării sprâncenelor, Andrada și-a construit parcursul profesional prin multă muncă, perfecționare continuă și participarea la numeroase cursuri de specializare și campionate. Atenția la detalii, răbdarea și dorința de a evidenția frumusețea naturală a fiecărei cliente se regăsesc în fiecare serviciu pe care îl oferă: extensii de gene, laminare gene, laminare sprâncene, stilizare și pensare.',
-   cta:'Rezervă cu Andrada',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=6a19c9656b8b61c95730c34a&showDetails=true&query=sig&absp=search_autocomplete&campaignId=&campaignSource='},
-  {img:'rocky_signature.jpeg',num:'03',name:'Rocky',role:'Hairstylist',
-   bio:'Rocky nu urmează trenduri — le adaptează. Înțelege textura, forma și stilul fiecărui client și construiește look-uri care funcționează în viața reală, nu doar în poze. Fiecare lucrare este despre echilibru între estetic și purtabil, cu focus pe sănătatea părului și rezultat pe termen lung.',
-   cta:'Rezervă cu Rocky',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=699c37051fcd26c66de6e74f&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
-  {img:'vali_signature.jpeg',num:'04',name:'Vali',role:'Barber',
-   bio:'Vali este despre precizie și control. Tunsori curate, fade-uri bine executate și atenție la fiecare detaliu. În scaunul lui, lucrurile sunt simple: tehnică bună, atmosferă relaxată și un rezultat care se vede.',
-   cta:'Rezervă cu Vali',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=699c363a1fcd26c66de6c540&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
-  {img:'alex_signature.jpeg',num:'05',name:'Alex',role:'Barber & Owner',
+  {img:'alex_signature.jpeg',num:'01',name:'Alex',role:'Barber & Owner',
    bio:'Alex este omul din spatele conceptului. Cu experiență și viziune, a construit un spațiu în care serviciile, atmosfera și standardele merg mână în mână. Ca barber, pune accent pe execuție corectă și consistență. Ca owner, pe echipă, comunitate și experiența fiecărui client.',
    cta:'Rezervă cu Alex',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=699c34ef1fcd26c66de68ed0&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
+  {img:'anda_signature.jpeg',num:'02',name:'Anda',role:'Tehnician unghii',
+   bio:'Anda este genul de tehnician care pune accent pe detalii și pe lucrul bine făcut. Fie că vorbim de întreținere, construcție sau design, fiecare set este realizat cu precizie și grijă pentru sănătatea unghiei. Stilul ei este curat, echilibrat și adaptat fiecărei cliente — pentru un rezultat care arată bine și rezistă.',
+   cta:'Rezervă cu Anda',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=699c35861fcd26c66de6a9bf&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
+  {img:'andrada_signature.jpeg',num:'03',name:'Andrada',role:'Tehnician gene & sprâncene',
+   bio:'Cu peste 4 ani de experiență în domeniul extensiilor de gene și al stilizării sprâncenelor, Andrada și-a construit parcursul profesional prin multă muncă, perfecționare continuă și participarea la numeroase cursuri de specializare și campionate. Atenția la detalii, răbdarea și dorința de a evidenția frumusețea naturală a fiecărei cliente se regăsesc în fiecare serviciu pe care îl oferă: extensii de gene, laminare gene, laminare sprâncene, stilizare și pensare.',
+   cta:'Rezervă cu Andrada',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=6a19c9656b8b61c95730c34a&showDetails=true&query=sig&absp=search_autocomplete&campaignId=&campaignSource='},
+  {img:'rocky_signature.jpeg',num:'04',name:'Rocky',role:'Hairstylist',
+   bio:'Rocky nu urmează trenduri — le adaptează. Înțelege textura, forma și stilul fiecărui client și construiește look-uri care funcționează în viața reală, nu doar în poze. Fiecare lucrare este despre echilibru între estetic și purtabil, cu focus pe sănătatea părului și rezultat pe termen lung.',
+   cta:'Rezervă cu Rocky',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=699c37051fcd26c66de6e74f&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
+  {img:'vali_signature.jpeg',num:'05',name:'Vali',role:'Barber',
+   bio:'Vali este despre precizie și control. Tunsori curate, fade-uri bine executate și atenție la fiecare detaliu. În scaunul lui, lucrurile sunt simple: tehnică bună, atmosferă relaxată și un rezultat care se vede.',
+   cta:'Rezervă cu Vali',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=699c363a1fcd26c66de6c540&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
 ];
 
 function initSpotlight(listId, members, imgId, numId, nameId, roleId, bioId, ctaId, isSignature){
@@ -506,7 +503,7 @@ const RV_META = {
   sig: {
     score:'5.0', count:'105 recenzii verificate',
     meroUrl:'https://mero.ro/p/rival-signature',
-    bars: [{w:'93%',pct:'93%'},{w:'6%',pct:'6%'},{w:'1%',pct:'1%'}]
+    bars: [{w:'100%',pct:'100%'},null,null]
   },
 };
 function updateRvSummary(loc){
@@ -516,13 +513,17 @@ function updateRvSummary(loc){
   if(totalEl) totalEl.textContent = m.count;
   if(rvMeroCta) rvMeroCta.href = m.meroUrl;
   if(meroLink)  meroLink.href = m.meroUrl;
-  // animate bars
-  const ids = [['bar5','pct5'],['bar4','pct4'],['bar3','pct3']];
-  ids.forEach(([barId, pctId], i) => {
+  // animate bars — hide rows with no data (e.g. Signature has only 5★)
+  const ids = [['bar5','pct5','row5'],['bar4','pct4','row4'],['bar3','pct3','row3']];
+  ids.forEach(([barId, pctId, rowId], i) => {
     const bar = document.getElementById(barId);
     const pct = document.getElementById(pctId);
-    if(bar) bar.style.width = m.bars[i].w;
-    if(pct) pct.textContent = m.bars[i].pct;
+    const row = document.getElementById(rowId);
+    const data = m.bars[i];
+    if(row) row.style.display = data ? '' : 'none';
+    if(!data) return;
+    if(bar) bar.style.width = data.w;
+    if(pct) pct.textContent = data.pct;
   });
 }
 
@@ -647,7 +648,7 @@ if(rvRefresh){
 }
 
 /* ── INIT ── */
-if(heroBg) heroBg.style.backgroundImage=`url('hero.png')`;
+if(heroBg) heroBg.style.backgroundImage=`url('rivalbarbershopnew.jpeg')`;
 onScroll();
 updateRvSummary('bs');
 renderReviews();
