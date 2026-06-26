@@ -31,18 +31,59 @@
   {
     "@context": "https://schema.org",
     "@type": "HairSalon",
-    "name": "Rival Barbershop",
+    "name": "Rival Barbershop & Rival Signature",
     "url": "https://www.saloanerival.ro",
+    "logo": "https://www.saloanerival.ro/RIVAL_logo_white.png",
     "image": "https://www.saloanerival.ro/hero.png",
-    "description": "Frizerie premium în Brașov — tunsori, bărbierit și îngrijire beard.",
+    "description": "Rival Barbershop și Rival Signature — două locații premium de frizerie în Brașov. Tunsori, bărbierit și îngrijire beard.",
+    "telephone": "+40764754985",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Str. Mureșenilor 3",
       "addressLocality": "Brașov",
+      "addressRegion": "Brașov",
+      "postalCode": "500030",
       "addressCountry": "RO"
     },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "16:00"
+      }
+    ],
     "sameAs": [
+      "https://www.instagram.com/rival.barbershop",
       "https://mero.ro/p/rival-barbershopmore"
-    ]
+    ],
+    "hasMap": "https://maps.google.com/?q=Str.+Mureșenilor+3,+Brașov",
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": "https://mero.ro/p/rival-barbershopmore",
+      "name": "Rezervă acum"
+    }
+  }
+  </script>
+
+  <!-- WebSite Schema pentru Sitelinks -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Rival Barbershop",
+    "url": "https://www.saloanerival.ro",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.saloanerival.ro/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
 
