@@ -413,6 +413,9 @@ const bsMembers=[
   {img:'radutatoo_barbershop.jpeg',num:'03',name:'Radu',role:'Tattoo Artist',imgPos:'top center',
    bio:'Pentru Radu, un tatuaj nu începe în momentul în care acul atinge pielea, ci în momentul în care o idee prinde contur. Fiecare proiect este construit de la zero, pornind de la povestea, personalitatea și direcția pe care clientul dorește să o exprime, transformând o simplă idee într-o lucrare cu identitate proprie. Stilul său îmbină atenția pentru compoziție, detaliul tehnic și libertatea artistică, rezultând tatuaje care nu urmăresc doar tendințe, ci sunt gândite să rămână relevante și valoroase în timp. De la proiecte fine și minimaliste până la lucrări ample, fiecare design este adaptat anatomiei și caracterului persoanei care îl poartă. Dincolo de rezultat, experiența colaborării ocupă un loc la fel de important — comunicarea deschisă, implicarea în procesul creativ și atenția acordată fiecărui detaliu contribuie la un mediu confortabil și profesionist, în care fiecare client participă activ la construirea propriului proiect. Pentru Radu, scopul nu este doar realizarea unui tatuaj reușit, ci crearea unei lucrări autentice, care să reprezinte cu adevărat omul care o poartă.',
    cta:'Rezervă cu Radu',url:'https://mero.ro/p/rival-barbershopmore?page=select_worker&serviceIds=65a78fd9a3ff03896c159f39&css=services_list'},
+  {img:'teo_barbershop.jpeg',num:'04',name:'Teo',role:'Barber',
+   bio:'Teo este un barber atent la detalii, care pune accent pe precizie, tehnică și pe înțelegerea dorințelor fiecărui client. Abordează fiecare tunsoare cu răbdare și seriozitate, urmărind un rezultat curat, bine definit și adaptat stilului personal.',
+   cta:'Rezervă cu Teo',url:'https://mero.ro/p/rival-barbershopmore'},
 ];
 const sigMembers=[
   {img:'alex_signature.jpeg',num:'01',name:'Alex',role:'Barber & Owner',
@@ -424,9 +427,9 @@ const sigMembers=[
   {img:'andrada_signature.jpeg',num:'03',name:'Andrada',role:'Tehnician gene & sprâncene',
    bio:'Cu peste 4 ani de experiență în domeniul extensiilor de gene și al stilizării sprâncenelor, Andrada și-a construit parcursul profesional prin multă muncă, perfecționare continuă și participarea la numeroase cursuri de specializare și campionate. Atenția la detalii, răbdarea și dorința de a evidenția frumusețea naturală a fiecărei cliente se regăsesc în fiecare serviciu pe care îl oferă: extensii de gene, laminare gene, laminare sprâncene, stilizare și pensare.',
    cta:'Rezervă cu Andrada',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=6a19c9656b8b61c95730c34a&showDetails=true&query=sig&absp=search_autocomplete&campaignId=&campaignSource='},
-  {img:'rocky_signature.jpeg',num:'04',name:'Rocky',role:'Hairstylist',
-   bio:'Rocky nu urmează trenduri — le adaptează. Înțelege textura, forma și stilul fiecărui client și construiește look-uri care funcționează în viața reală, nu doar în poze. Fiecare lucrare este despre echilibru între estetic și purtabil, cu focus pe sănătatea părului și rezultat pe termen lung.',
-   cta:'Rezervă cu Rocky',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=699c37051fcd26c66de6e74f&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
+  {img:'codruta_signature.jpeg',num:'04',name:'Codruța',role:'Hairstylist',
+   bio:'Codruța nu urmează trenduri — le adaptează. Înțelege textura, forma și stilul fiecărei cliente și construiește look-uri care funcționează în viața reală, nu doar în poze. Fiecare lucrare este despre echilibru între estetic și purtabil, cu focus pe sănătatea părului și rezultat pe termen lung.',
+   cta:'Rezervă cu Codruța',url:'https://mero.ro/p/rival-signature'},
   {img:'vali_signature.jpeg',num:'05',name:'Vali',role:'Barber',
    bio:'Vali este despre precizie și control. Tunsori curate, fade-uri bine executate și atenție la fiecare detaliu. În scaunul lui, lucrurile sunt simple: tehnică bună, atmosferă relaxată și un rezultat care se vede.',
    cta:'Rezervă cu Vali',url:'https://mero.ro/p/rival-signature?page=worker_details&workerId=699c363a1fcd26c66de6c540&showDetails=true&absp=company_details_deeplink&campaignId=&campaignSource='},
